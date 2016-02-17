@@ -1,15 +1,14 @@
 # Site settings
 title: Cedulio Cezar
-header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-copyright_name: Your/Project/Corporate Name
-description: "Write your site description here. It will be used as your sites meta description as well!"
-baseurl: "/readable-code"
-url: "http://yourdomain.com"
+header-img: img/home.png
+email: ceduliocezar@gmail.com
+copyright_name: Cedulio Cezar
+description: "A"
+baseurl: ""
+url: "http://www.ceduliocezar.com"
 twitter_username: readablecoding
-github_username:  davidtmiller
-facebook_username:  IronSummitMedia
-email_username:  your-email@yourdomain.com
+github_username:  ceduliocezar
+email_username:  ceduliocezar@gmail.com
 
 # Build settings
 markdown: kramdown
