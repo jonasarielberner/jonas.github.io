@@ -18,8 +18,6 @@ If you are in this situation, PLEASE, don't do that. At a first glance it may lo
 
 Here is one from the official documentation that you can start: [Android Runtime Chances](http://developer.android.com/guide/topics/resources/runtime-changes.html)
 
-
-
 ## Don't Support Multiple screen
 
 <img src="{{ site.baseurl }}/img/post1/android_support_multiple_screens.jpg" alt="Tweet complaining about support multiple screens">
@@ -35,7 +33,6 @@ You might be thinking that your app won't support large screens or the small one
 One argument that you might think is that the app doesn't need to run on different devices. It can be true right now in your scenario, but even is these cases I recommend you learn how to create screens that support different sizes. I can tell you by experience that these kind of requirement can change really fast.
 
 A place to start: [Android Screen Sizes](http://developer.android.com/training/multiscreen/screensizes.html)
-
 
 ## Neglecting UI & UX
 
