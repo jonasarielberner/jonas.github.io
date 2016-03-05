@@ -4,19 +4,25 @@ title:      "Most common mistakes that new Android programmers make"
 subtitle:   "Avoid these and enjoy"
 date:       2016-01-14 11:00:00
 author:     "Cedulio Cezar"
-header-img: "img/post-bg-06.jpg"
+header-img: "img/post1/head.jpg"
 ---
 So you decided to become an Android Dev and now you are facing some problems? Don't worry, in this post I will show you some of the most common mistakes that I realize during my experience in Android Development.
 
 ## Lock Screen Rotation
 
+<img src="{{ site.baseurl }}/img/post1/android_block_screen_rotation.jpg" alt="Tweet complaining about support multiple screens">
+
 Just after you started to develop your App you will realize that strange things happen when you rotate your device, like: the text disappear, buttons stop working or your App even crash. After searching on the Internet you might find someone(on stackoverflow maybe?) telling you to modify your AndroidManifest.xml and lock the screen rotation.
 
 If you are in this situation, PLEASE, don't do that. At a first glance it may look good, but unless you have an excellent reason to do that you shouldn't go this way. There is a bunch of articles on the Internet teaching how to correctly handle this.
 
-Here is one from the official documentation that you can start: <a href="http://developer.android.com/guide/topics/resources/runtime-changes.html" target="blank">Android Runtime Chances</a>
+Here is one from the official documentation that you can start: [Android Runtime Chances](http://developer.android.com/guide/topics/resources/runtime-changes.html)
+
+
 
 ## Don't Support Multiple screen
+
+<img src="{{ site.baseurl }}/img/post1/android_support_multiple_screens.jpg" alt="Tweet complaining about support multiple screens">
 
 Let's assume that now your app is handling the rotation correctly and you want to show to your friends what amazing app you created.
 
@@ -28,7 +34,7 @@ You might be thinking that your app won't support large screens or the small one
 
 One argument that you might think is that the app doesn't need to run on different devices. It can be true right now in your scenario, but even is these cases I recommend you learn how to create screens that support different sizes. I can tell you by experience that these kind of requirement can change really fast.
 
-A place to start: <a href="http://developer.android.com/training/multiscreen/screensizes.html">Android Screen Sizes</a>
+A place to start: [Android Screen Sizes](http://developer.android.com/training/multiscreen/screensizes.html)
 
 
 ## Neglecting UI & UX
