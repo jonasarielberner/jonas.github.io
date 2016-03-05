@@ -5,6 +5,8 @@ subtitle:   "Avoid these and enjoy"
 date:       2016-01-14 11:00:00
 author:     "Cedulio Cezar"
 header-img: "img/post1/head.jpg"
+tags: [android,programmer,new programmer,android dev,tips]
+summary: "List of common mistakes on android development"
 comments: True
 ---
 So you decided to become an Android Dev and now you are facing some problems? Don't worry, in this post I will show you some of the most common mistakes that I realize during my experience in Android Development.
