@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Travis CI awesomeness!"
-subtitle:   "An overview of the Travis CI awesomness"
+subtitle:   "An overview of the Travis CI"
 date:       2016-03-06 13:30:00
 author:     "Cedulio Cezar"
 header-img: "img/posts/travis/head.jpg"
