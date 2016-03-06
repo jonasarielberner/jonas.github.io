@@ -19,7 +19,7 @@ Just after you started to develop your App you will realize that strange things 
 
 If you are in this situation, PLEASE, don't do that. At a first glance it may look good, but unless you have an excellent reason to do that you shouldn't go this way. There is a bunch of articles on the Internet teaching how to correctly handle this.
 
-Here is one from the official documentation that you can start: [Android Runtime Chances](http://developer.android.com/guide/topics/resources/runtime-changes.html)
+Here is one from the official documentation that you can start: [Android Runtime Changes](http://developer.android.com/guide/topics/resources/runtime-changes.html)
 
 ## Don't Support Multiple screen
 
