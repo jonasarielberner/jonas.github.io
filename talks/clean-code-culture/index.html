@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>Clean Code Culture – Cedulio Cezar</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="author" content="Cedulio Cezar">
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -40,18 +40,17 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-background="/img/home.png">
+				<section data-background="./img/home.png">
 
 					<h1>Clean Code Culture</h1>
 					<h3>Keep your code base maintainable</h3>
 					<p>
-						<small>Created by <a href="http://ceduliocezar.com">Cedulio Cezar</a> / <a href="http://twitter.com/readablecoding">@readablecoding</a></small>
+						<small><a href="http://ceduliocezar.com">Cedulio Cezar</a> / <a href="http://twitter.com/readablecoding">@readablecoding</a></small>
 					</p>
 				</section>
 				<section>
 					<section>
-						<h2>Antes de começar</h2>
-						<p>Let's compare something</p>
+						<h2>Let's compare something</h2>
 					</section>
 					<section>
 						<p>O que você me diz desse código?</p>
@@ -70,36 +69,249 @@
 						<h2>O que acha de mudarmos algumas coisas?</h2>
 					</section>
 					<section>
-						<p>What about that?</p>
+						<p>Que tal?</p>
 						<img width="800" height="600" data-src="img/compare.svg" alt="Code example"/>
 					</section>
 					<section>
-						<h2>Now, you tell me</h2>
-						<h4>Pretty simple, huh?</h4>
+						<h4>Ficou simples não é?</h4>
+					</section>
+					<section>
+						<h3>É disso que trata-se o Clean Code</h3>
 					</section>
 				</section>
 				<section>
-					<h2>This all about Clean Code</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
+					<section>
+						<h2>Como podemos definir o Clean Code?</h2>
+					</section>
+					<section>
+						<p>Pesquisando pode-se encontrar várias definições</p>
+					</section>
+					<section>
+						<h3>Clean Code</h3>
+						<ul>
+							<li>Legível</li>
+							<li>Sustentável (Manutenível)</li>
+							<li>Testável</li>
+							<li>Elegante (Há controversias)</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h4>Você saberia dizer se atendemos algum desses pontos?</h4>
+					</section>
+					<section data-background="./img/home.png">
+						<h2>Ou talvez essa seja a nossa situação?</h2>
+					</section>
 				</section>
 
 				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
+					<section>
+						<h2>Como eu comecei</h2>
+					</section>
+					<section>
+						<h2>Imagine o caos</h2>
+						<ul>
+							<li>Códigos macarrônicos</li>
+							<li>Falta de documentação</li>
+							<li>Bugs que vão e voltam</li>
+							<li>Equipe acomodada e conformada</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Ponto de virada</h2>
+					</section>
+					<section>
+						<h2>Depois de alguns meses</h2>
+						<ul>
+							<li>Média mensal de chamados reduzido em mais de 50%</li>
+							<li>Maior participação dos integrantes</li>
+							<li>Equipe com mais tempo para pesquisa</li>
+						</ul>
+					</section>
+					<section data-background="./img/clean-code-reaction.gif">
+						<h2>Minha reação</h2>
+					</section>
+				</section>
+				<section>
+					<h2>Devemos mesmo nos importar?<h2>
+				</section>
+				<section>
+					<p>Sim, boa parte do tempo passamos lendo código</p>
+					<ul>
+						<li>Bug fixes</li>
+						<li>Business changes</li>
+						<li>Melhorias</li>
+						<li>Novas funcionalidades</li>
+					</ul>
+				</section>
+				<section>
+					<section data-background="./img/bike2.jpg">
+						<h2>Como nem tudo são flores</h2>
+						<p>Temos um pequeno problema</p>
+						<p class="fragment current-visible">Subjetividade</p>
+					</section>
+					<section>
+						<h3>Não existe receita de bolo</h3>
+						<ul>
+							<li>Legível</li>
+							<li>Sustentável</li>
+							<li>Testável</li>
+							<li>Elegante</li>
+						</ul>
+						<p class="fragment current-visible">Devemos ter ter cautela.</p>
+					</section>
+				</section>
+
+				<section data-background="./img/bokeh.jpg">
+					<h2>O que realmente compõem o Clean Code?</h2>
+					<p>Conjunto de conceitos simples</p>
+					<h3 class="fragment current-visible">Que infelizmente muita gente não coloca em prática</h3>
 				</section>
 
 				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
+					<h2>Conceitos</h2>
+					<ul>
+						<li class="fragment">Nomenclatura</li>
+						<li class="fragment">Princípio da Responsabilidade Única</li>
+						<li class="fragment">Redução do uso de comentários</li>
+						<li class="fragment">Bom senso</li>
+						<li class="fragment">Testes</li>
+						<li class="fragment">Cultura</li>
+					</ul>
+				</section>
+
+				<section data-background="./img/name.jpg">
+					<h2>Nomenclatura</h2>
+					<ul>
+						<li>Nomes pronunciáveis</li>
+						<li>Nomes não ambíguos</li>
+						<li>Nomes intencionais</li>
+						<li>Certa dificuldade para atribuir bons nomes</li>
+					</ul>
+				</section>
+				<section>
+						<h2>Nomes pronunciáveis</h2>
+						<p>Atribua nomes que sejam pronunciáveis em uma conversa</p>
+						<p>Limite de tamanho? Pra que?</p>
+						<aside class="notes">
+							Já imaginou você tentando falar sobre aquela classe que você não consegue nem pronunciar o nome?
+						</aside>
+				</section>
+				<section>
+						<h2>Nomes não ambíguos</h2>
+						<p>O que seria a variável 'valorFP'?</p>
+						<aside class="notes">
+							Valor forma pagamento? Valor final do produto?
+						</aside>
+				</section>
+				<section>
+						<section>
+								<h2>Nomes intencionais</h2>
+								<ul>
+									<li>Tipagem</li>
+									<li>Propósito</li>
+								</ul>
+						</section>
+						<section>
+							<h2>lista</h2>
+							<ul>
+								<li class="fragment">Não muito bom</li>
+								<li class="fragment">Qual é a tipagem?</li>
+								<li class="fragment">Qual o seu propósito?</li>
+							</ul>
+						</section>
+						<section>
+							<h2 class="fragment highlight-blue">listaProdutos</h2>
+							<ul>
+								<li class="fragment">Um pouco melhor</li>
+								<li class="fragment">Sabemos a tipagem</li>
+								<li class="fragment">Mas pra que ele serve?</li>
+							</ul>
+						</section>
+						<section>
+							<h2 class="fragment highlight-green">catalogoProdutos</h2>
+							<ul>
+								<li class="fragment">Sabemos a tipagem</li>
+								<li class="fragment">Temos idéia da intenção.</li>
+							</ul>
+						</section>
+				</section>
+
+				<section>
+					<h2>Agora que ja sabemos o nome</h2>
+					<p>Qual padrão vamos utilizar?</p>
+					<ul>
+						<li class="fragment">catalogoProdutos</li>
+						<li class="fragment">CatalogoProdutos</li>
+						<li class="fragment">catalogo_produtos</li>
+						<li class="fragment">_catalogoProdutos</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Não importa...</h2>
+					<p>Contanto que toda a equipe utilize o padrão</p>
+					<p class="fragment">Priorizar o padrão da comunidade</p>
+
+					<aside class="notes">
+						Isso costuma inflamar muito as dicussões, e no final o que importa mesmo é se todo mundo segue.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Parece básico demais</h2>
+					<p>E realmente é!</p>
+					<p class="fragment highlight-red">Mas muita gente não faz!</p>
+				</section>
+
+				<section>
+					<h2>Mas cuidado</h2>
+				</section>
+
+				<section data-background="./img/bokeh.jpg">
+					<h2>Código com exemplo de variável com nome ruim</h2>
+				</section>
+
+				<section>
+					<h2>OK, já falamos de nomes de variáveis, mas e os métodos?</h2>
+				</section>
+
+				<section>
+					<h2>Podemos aplicar as mesmas regras de nomes!</h2>
+					<ul>
+						<li>Nomes pronunciáveis</li>
+						<li>Nomes não ambíguos</li>
+						<li>Nomes intencionais</li>
+					</ul>
+					<p class="fragment">Porém também temos que nos preocupar também com o que nosso método faz</p>
+				</section>
+
+				<section>
+					<h2>Podemos aplicar as mesmas regras de nomes!</h2>
+					<ul>
+						<li>Nomes pronunciáveis</li>
+						<li>Nomes não ambíguos</li>
+						<li>Nomes intencionais</li>
+					</ul>
+					<p class="fragment">Porém também temos que nos preocupar também com o que nosso método faz</p>
+				</section>
+
+				<section data-background="./img/srp.jpg">
+					<h2>Princípio da Responsabilidade Única</h2>
+					<small><p>Single Responsible Principle(SRP)</p></small>
+				</section>
+
+				<section>
+					<h2>Tenha apenas uma responsabilidade por método</h2>
+					<ul>
+						<li class="fragment">Métodos curtos</li>
+						<li class="fragment">Vários níveis métodos</li>
+						<li>Nomes intencionais</li>
+					</ul>
+					<aside class="notes">
+						Robert C. Martin, autor do livro diz que tamanho de um método deve girar em torno de 20 linhas.
+					</aside>
 				</section>
 
 				<section data-markdown>
