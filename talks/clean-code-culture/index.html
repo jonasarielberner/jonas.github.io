@@ -56,7 +56,7 @@
 
 					<section>
 						<p>O que você me diz desse código?</p>
-						<img width="800" height="600" data-src="img/compare1.png" alt="Code example"/>
+						<img width="800" height="600" data-src="./img/compare1.png" alt="Code example"/>
 						<aside class="notes">
 							Existem algumas opões
 							Bom
@@ -72,7 +72,7 @@
 
 					<section>
 						<p>Que tal?</p>
-						<img width="800" height="600" data-src="img/compare2.png" alt="Code example"/>
+						<img width="800" height="600" data-src="./img/compare2.png" alt="Code example"/>
 					</section>
 
 					<section>
@@ -126,7 +126,7 @@
 
 					<section>
 						<h2>Um exemplo de código</h2>
-						<img width="800" height="600" data-src="img/compare2.png" alt="Code example"/>
+						<img width="800" height="600" data-src="./img/compare2.png" alt="Code example"/>
 					</section>
 
 					<section>
@@ -371,6 +371,17 @@ action4();
 					</ul>
 				</section>
 
+				<section>
+					<h3>Falando em responsabilidade...</h3>
+					<img width="800" height="600" data-src="./img/responsability.png" alt="Exemplo de código com mais de uma responsabilidade"/>
+				</section>
+
+				<section>
+					<h3>Pense em uma API</h3>
+					<p>Na qual você chama o setText e o componente mostra uma dialog após definir o texto</p>
+				</section>
+
+
 				<section data-background="./img/notes.jpg">
 					<h3>Comentários, precisamos mesmo deles?</h3>
 
@@ -379,6 +390,174 @@ action4();
 //Now, God only knows
 					</code></pre>
 				</section>
+
+				<section>
+					<h3>Regras básicas comentários</h3>
+					<ul>
+						<li>Eles podem mentir,pois eles não compilam nem executam</li>
+						<li>Não melhoram código ruim</li>
+						<li>Pense duas vezes antes de comentar um código</li>
+						<img width="500" height="697" data-src="img/responsability.png" alt="Exemplo de código com mais de uma responsabilidade"/>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Bom uso de comentários</h3
+					<ul>
+						<li>Descrever uma intenção ou clarear algo</li>
+						<li>Avisos ou consequências</li>
+						<li>Javadoc para uma API</li>
+						<img width="500" height="697" data-src="./img/responsability.png" alt="Exemplo de código com mais de uma responsabilidade"/>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Comentários ruins</h3>
+					<ul>
+						<li>Comentários óbvios
+							<ul>
+								<li>// Default constructor</li>
+								<li>// lista de produtos</li>
+							</ul>
+						</li>
+						<li>Journaling
+							<ul>
+								<li>// 06/06/1666 - batman - adicionou o calculo</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section data-background="know_your_tools.png">
+					<h2>Conheça suas ferramentas</h2>
+				</section>
+
+				<section>
+					<h2>Resistência a mudança</h2>
+					<p>Remoção do Journaling</p>
+					<img data-src="./img/versionning.png" alt="Todas as informações são fornecidas pelo VCS"/>
+				</section>
+
+				<section>
+					<h2>Código comentado</h2>
+					<ul>
+						<li>Ficará lá para sempre</li>
+						<li>Utilize VCS para isso</li>
+					</ul>
+
+					<pre><code class="hljava" data-trim contenteditable>
+//private MenuProcess criarMenuCadastro() {
+//	MenuProcess menuCadastro = new MenuProcess();
+//	menuCadastro.setText(getString(R.string.atividade_menu_aceite));
+//	menuCadastro.setWidth(80);
+//	menuCadastro.setState(MenuProcess.StateMenu.PENDENTE);
+//	menuCadastro.setResImageIcon(R.drawable.ic_tab_aceite);
+//	menuCadastro.setResImageIconSelected(R.drawable.ic_tab_aceite_selected);
+//	menuCadastro.setSelected(true);
+//	return menuCadastro;
+//}
+					</code></pre>
+				</section>
+
+				<section data-background="./img/columns.jpg">
+					<h2>Número de colunas</h2>
+					<p>Não crie linhas intermináveis</p>
+				</section>
+
+				<section data-background="./img/comparing.jpg">
+				</section>
+
+				<section>
+					<h2>Número de colunas</h2>
+					<ul>
+						<li>80 colunas sugerido pelo autor</li>
+						<li>Facilita o merge</li>
+						<li>Facilita o uso de formatação automática</li>
+						<li>A equipe deve decidir, não somente uma pessoa</li>
+					</ul>
+				</section>
+
+				<section data-background="./img/crash.jpg">
+					<h2>Exceptions</h2>
+					<p>Como você trata os erros do seu software?</p>
+				</section>
+
+				<section>
+					<h3>Quantas vezes você ja viu isso?</h3>
+
+					<img data-src="./img/exception.jpg" alt="Erro não tratado corretamente"/>
+				</section>
+
+				<section>
+					<h3>De a devida atenção as exceptions</h3>
+					<p>Em geral, só faça um catch quando for realizar alguma ação ou melhorar a mensagem</p>
+				</section>
+
+				<section>
+					<h3>Saiba como utilizar o catch</h3>
+					<img data-src="./img/exception3.jpg" alt="Ilustração"/>
+				</section>
+
+				<section>
+					<img data-src="./img/exception2.jpg" alt="Tratamento incorreto"/>
+				</section>
+
+				<section>
+					<h2>Testes</h2>
+					<p>Você já escreveu algum teste que possa ser repetido automaticamente?</p>
+				</section>
+
+				<section>
+					<h3>Testes unitários</h3>
+					<p>Como seria testar um método gigante?</p>
+					<p>Todos os conceitos apresentados podem e devem ser aplicados aos testes</p>
+				</section>
+
+				<section>
+					<p>Exemplo de teste pequeno para um formatador de moeda</p>
+					<img data-src="./img/test.jpg" alt="Test code"/>
+				</section>
+
+				<section>
+					<h3>TDD</h3>
+					<p>Caberia uma apresentação inteira sobre testes unitários e TDD</p>
+				</section>
+
+				<section data-background="./img/culture.png">
+					<h2>Clean Code Culture</h2>
+					<p>Muito mais que um checklist</p>
+				</section>
+
+				<section>
+					<h3>Clean Coder Rule</h2>
+					<p>Sempre deixe o código mais limpo do que você o encontrou</p>
+					<img data-src="./img/clean_coder_rule.jpg" alt="Clean Code Rule"/>
+				</section>
+
+				<section>
+					<h3>Como obter uma base de código sustentável</h3>
+					<ul>
+						<li>Equipe comprometida em produzir com qualidade</li>
+						<li>Cooperação entre integrantes</li>
+						<li>Conversa sobre boas práticas</li>
+						<li>Esquecer a filosofia: Beleza e Paciência</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Clean Code em projetos novos</h3>
+					<ul>
+						<li>Atribua nomes intencionais</li>
+						<li>Teste a separação de métodos</li>
+						<li>Leia algumas páginas do Clean Code por dia e teste o que aprendeu</li>
+					</ul>
+				</section>
+
+				<section data-background="./img/ant.jpg">
+					<h3>Clean Code em projetos antigos</h3>
+					<p>Começamos onde estamos, com o que temos e fazendo o que podemos</p>
+				</section>
+
 
 				<section data-markdown>
 					<script type="text/template">
