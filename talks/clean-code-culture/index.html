@@ -45,13 +45,13 @@
 					<h1>Clean Code Culture</h1>
 					<h3>Keep your code base maintainable</h3>
 					<p>
-						<small><a href="http://ceduliocezar.com">Cedulio Cezar</a> / <a href="http://twitter.com/readablecoding">@readablecoding</a></small>
+						<a href="http://ceduliocezar.com">Cedulio Cezar</a> / <a href="http://twitter.com/readablecoding">@readablecoding</a>
 					</p>
 				</section>
 				<section>
 
 					<section>
-						<h2>Exercício comparação</h2>
+						<h2>Exercício</h2>
 					</section>
 
 					<section>
@@ -67,12 +67,12 @@
 					</section>
 
 					<section>
-						<h3>O que acha de mudarmos algumas coisas?</h2>
+						<p>O que acha de mudarmos algumas coisas?</p>
 					</section>
 
 					<section>
 						<p>Que tal?</p>
-						<img width="800" height="600" data-src="./img/compare2.png" alt="Code example"/>
+						<img width="462" height="213" data-src="./img/compare2.png" alt="Code example"/>
 					</section>
 
 					<section>
@@ -82,12 +82,12 @@
 				</section>
 
 				<section>
-					<h3>É disso que se trata o Clean Code!</h2>
+					<p>É disso que se trata o Clean Code!</p>
 					<ul>
 						<li class="fragment">Legível</li>
 						<li class="fragment">Sustentável (Manutenível)</li>
 						<li class="fragment">Testável</li>
-						<li class="fragment">Elegante (Há controversias)</li>
+						<li class="fragment">Elegante</li>
 					</ul>
 				</section>
 
@@ -125,11 +125,6 @@
 					</section>
 
 					<section>
-						<h2>Um exemplo de código</h2>
-						<img width="800" height="600" data-src="./img/compare2.png" alt="Code example"/>
-					</section>
-
-					<section>
 						<h2>Ponto de virada</h2>
 						<p>Adoção do Clean Code e patterns de arquitetura adequados</p>
 					</section>
@@ -141,6 +136,7 @@
 							<li>Maior participação dos integrantes</li>
 							<li>Equipe com mais tempo para pesquisa</li>
 							<li>Pouquíssimos indíces de incêndios</li>
+							<li>Equipe de testes com mais tempo para testar o business</li>
 						</ul>
 					</section>
 
@@ -150,27 +146,22 @@
 				</section>
 
 				<section>
-					<h2>Devemos mesmo nos importar?<h2>
-				</section>
-
-				<section>
-					<p>Boa parte do tempo passamos lendo código</p>
-					<ul>
+					<h2>Devemos mesmo nos importar?</h2>
+					<p class="fragment">Boa parte do tempo passamos lendo código</p>
+					<ul class="fragment">
 						<li>Bug fixes</li>
 						<li>Business changes</li>
 						<li>Melhorias</li>
 						<li>Novas funcionalidades</li>
 					</ul>
-				</section>
 
-				<section>
-					<h3>Quem vai manter o código no futuro?</h3>
+					<p class="fragment">Quem vai manter o código no futuro?</p>
 				</section>
 
 				<section>
 					<section data-background="./img/bike2.jpg">
 						<h2>Como nem tudo são flores</h2>
-						<p class="fragment">Subjetividade</p>
+						<h4 class="fragment">Subjetividade</h4>
 					</section>
 					<section>
 						<h3>Não existe receita de bolo</h3>
@@ -200,7 +191,7 @@
 				<section>
 					<h3>O que realmente compõem o Clean Code?</h3>
 					<p>Conjunto de conceitos simples</p>
-					<h3 class="highlight-red">Que infelizmente muita gente não coloca em prática</h3>
+					<p class="fragment">Que infelizmente muita gente não coloca em prática</p>
 				</section>
 
 				<section>
@@ -228,7 +219,6 @@
 				<section>
 						<h2>Nomes pronunciáveis</h2>
 						<p>Atribua nomes que sejam pronunciáveis em uma conversa</p>
-						<p>Limite de tamanho? Pra que?</p>
 						<aside class="notes">
 							Já imaginou você tentando falar sobre aquela classe que você não consegue nem pronunciar o nome?
 						</aside>
@@ -236,6 +226,8 @@
 				<section>
 						<h2>Nomes não ambíguos</h2>
 						<p>O que seria a variável 'valorFP'?</p>
+						<p class="fragment">Valor forma pagamento?</p>
+						<p class="fragment">Valor final do produto?</p>
 						<aside class="notes">
 							Valor forma pagamento? Valor final do produto?
 						</aside>
@@ -249,7 +241,7 @@
 								</ul>
 						</section>
 						<section>
-							<h2>lista</h2>
+							<p>lista</p>
 							<ul>
 								<li>Não muito bom</li>
 								<li class="fragment">Qual é a tipagem?</li>
@@ -257,7 +249,7 @@
 							</ul>
 						</section>
 						<section>
-							<h2 class="fragment">listaProdutos</h2>
+							<p>listaProdutos</p>
 							<ul>
 								<li class="fragment">Um pouco melhor</li>
 								<li class="fragment">Sabemos a tipagem</li>
@@ -265,10 +257,10 @@
 							</ul>
 						</section>
 						<section>
-							<h2 class="fragment">catalogoProdutos</h2>
+							<p>catalogoProdutos</p>
 							<ul>
 								<li class="fragment">Sabemos a tipagem</li>
-								<li class="fragment">Temos idéia da intenção.</li>
+								<li class="fragment">Temos idéia da intenção</li>
 							</ul>
 						</section>
 				</section>
@@ -286,8 +278,8 @@
 
 				<section>
 					<h2>Não importa...</h2>
-					<p>Contanto que toda a equipe utilize o padrão</p>
-					<p class="fragment">Priorizar o padrão da comunidade</p>
+					<p>Desde que toda a equipe utilize o padrão</p>
+					<p class="fragment">Priorize o padrão da comunidade</p>
 
 					<aside class="notes">
 						Isso costuma inflamar muito as dicussões, e no final o que importa mesmo é se todo mundo segue.
@@ -301,6 +293,7 @@
 				</section>
 
 				<section>
+					<h2>IU064</h2>
 					<img width="800" height="600" data-src="img/awful_class_name.png" alt="Awful class name"/>
 				</section>
 
@@ -316,7 +309,7 @@ action4();
 				</section>
 
 				<section>
-					<h3>Podemos aplicar as mesmas regras!</h3>
+					<h3>Devemos aplicar as mesmas regras!</h3>
 					<ul>
 						<li>Nomes pronunciáveis</li>
 						<li>Nomes não ambíguos</li>
@@ -334,20 +327,19 @@ action4();
 					<ul>
 						<li>Devem caber em uma tela</li>
 						<li>Robert C. Martin estipula métodos de 20 linhas</li>
-						<li>Faça uma coisa só</li>
 					</ul>
 				</section>
 
 				<section>
-					<p>Com a diminuição do tamanho dos métodos, você aumenta a reusabilidade dos mesmos</p>
+					<h2>Reusabilidade</h2>
+					<p>Com a diminuição do tamanho dos métodos você aumenta a possibilidade de reuso dos mesmos</p>
 				</section>
 
 				<section>
 					<h3>Como reduzir o tamanho dos métodos?</h3>
 					<ul>
-						<li>Separe os métodos em níveis diferentes<li>
+						<li>Separe os métodos em níveis diferentes</li>
 						<li>Número de níveis pode variar</li>
-						<li>Faça uma coisa só</li>
 						<li>Aplicar os conceitos DRY e SRP</li>
 					</ul>
 				</section>
@@ -355,10 +347,10 @@ action4();
 				<section>
 					<h3>Don't Repeat Yourself(DRY)</h3>
 					<ul>
-						<li>Evite repetição, avance na abstração.<li>
+						<li>Evite repetição, avance na abstração</li>
 						<li>Pequenos trechos podem ser extraídos em métodos</li>
 						<li>Código duplicado dificulta a manutenção</li>
-						<li>Novamente, básico mas muita gente não faz!</li>
+						<li class="fragment">Novamente, básico mas muita gente não faz!</li>
 					</ul>
 				</section>
 
@@ -368,16 +360,17 @@ action4();
 						<li>Faça uma coisa só</li>
 						<li>Fuja dos God Objects</li>
 						<li>Uma boa pista de que algo não vai bem são as SQL escritas direto na 'tela'</li>
+						<li>Classes que manipulam muitas classes</li>
 					</ul>
 				</section>
 
 				<section>
 					<h3>Falando em responsabilidade...</h3>
-					<img width="800" height="600" data-src="./img/responsability.png" alt="Exemplo de código com mais de uma responsabilidade"/>
+					<img width="800" height="600" data-src="./img/responsibility.png" alt="Exemplo de código com mais de uma responsabilidade"/>
 				</section>
 
 				<section>
-					<h3>Pense em uma API</h3>
+					<h3>Achou pouco? Pense em uma API...</h3>
 					<p>Na qual você chama o setText e o componente mostra uma dialog após definir o texto</p>
 				</section>
 
@@ -394,20 +387,24 @@ action4();
 				<section>
 					<h3>Regras básicas comentários</h3>
 					<ul>
-						<li>Eles podem mentir,pois eles não compilam nem executam</li>
+						<li>Eles podem mentir, pois eles não compilam nem executam</li>
 						<li>Não melhoram código ruim</li>
 						<li>Pense duas vezes antes de comentar um código</li>
-						<img width="500" height="697" data-src="img/responsability.png" alt="Exemplo de código com mais de uma responsabilidade"/>
+						<img class="fragment" data-src="./img/comments.png" alt="Exemplo de código com mais de uma responsabilidade"/>
 					</ul>
 				</section>
 
 				<section>
-					<h3>Bom uso de comentários</h3
+					<h3>Bom uso de comentários</h3>
 					<ul>
-						<li>Descrever uma intenção ou clarear algo</li>
+						<li>Descrever uma intenção ou clarear algo
+							<ul>
+								<li>// Formato da data yyyy-MM-dd</li>
+							</ul>
+						</li>
 						<li>Avisos ou consequências</li>
+						<li>TODO's, que devem ser temporários</li>
 						<li>Javadoc para uma API</li>
-						<img width="500" height="697" data-src="./img/responsability.png" alt="Exemplo de código com mais de uma responsabilidade"/>
 					</ul>
 				</section>
 
@@ -428,23 +425,19 @@ action4();
 					</ul>
 				</section>
 
-				<section data-background="know_your_tools.png">
+				<section>
 					<h2>Conheça suas ferramentas</h2>
+					<img data-src="./img/know_your_tools.png"/>
 				</section>
 
 				<section>
 					<h2>Resistência a mudança</h2>
 					<p>Remoção do Journaling</p>
-					<img data-src="./img/versionning.png" alt="Todas as informações são fornecidas pelo VCS"/>
+					<img class="fragment" data-src="./img/versionning.png" alt="Todas as informações são fornecidas pelo VCS"/>
 				</section>
 
 				<section>
-					<h2>Código comentado</h2>
-					<ul>
-						<li>Ficará lá para sempre</li>
-						<li>Utilize VCS para isso</li>
-					</ul>
-
+					<h2>Evite Código comentado</h2>
 					<pre><code class="hljava" data-trim contenteditable>
 //private MenuProcess criarMenuCadastro() {
 //	MenuProcess menuCadastro = new MenuProcess();
@@ -457,6 +450,12 @@ action4();
 //	return menuCadastro;
 //}
 					</code></pre>
+
+					<ul class="fragment">
+						<li>Ficará lá para sempre</li>
+						<li>Utilize VCS para isso</li>
+					</ul>
+
 				</section>
 
 				<section data-background="./img/columns.jpg">
@@ -464,7 +463,8 @@ action4();
 					<p>Não crie linhas intermináveis</p>
 				</section>
 
-				<section data-background="./img/comparing.jpg">
+				<section>
+					<img data-src="./img/comparing.png" alt="Todas as informações são fornecidas pelo VCS"/>
 				</section>
 
 				<section>
@@ -494,15 +494,16 @@ action4();
 				</section>
 
 				<section>
-					<h3>Saiba como utilizar o catch</h3>
+					<p>Saiba como utilizar o mecanismo de tratamento de erros</p>
 					<img data-src="./img/exception3.jpg" alt="Ilustração"/>
 				</section>
 
 				<section>
+					<p>Sim, todos os catchs fazem a mesma coisa</p>
 					<img data-src="./img/exception2.jpg" alt="Tratamento incorreto"/>
 				</section>
 
-				<section>
+				<section data-background="./img/testing.jpg">
 					<h2>Testes</h2>
 					<p>Você já escreveu algum teste que possa ser repetido automaticamente?</p>
 				</section>
@@ -523,33 +524,46 @@ action4();
 					<p>Caberia uma apresentação inteira sobre testes unitários e TDD</p>
 				</section>
 
-				<section data-background="./img/culture.png">
+				<section>
+					<section>
+						<h3>Você pode até não concordar com TDD</h3>
+						<p>O importante é ter pelo menos testes unitários caso contrário...</p>
+					</section>
+
+					<section data-background="./img/notests.gif">
+					</section>
+				</section>
+
+				<section data-background="./img/culture.jpg">
 					<h2>Clean Code Culture</h2>
 					<p>Muito mais que um checklist</p>
 				</section>
 
 				<section>
-					<h3>Clean Coder Rule</h2>
-					<p>Sempre deixe o código mais limpo do que você o encontrou</p>
-					<img data-src="./img/clean_coder_rule.jpg" alt="Clean Code Rule"/>
-				</section>
-
-				<section>
-					<h3>Como obter uma base de código sustentável</h3>
+					<h3>Tudo isso depende...</h3>
 					<ul>
-						<li>Equipe comprometida em produzir com qualidade</li>
-						<li>Cooperação entre integrantes</li>
+						<li>Equipe comprometida com a qualidade</li>
+						<li>Cooperação</li>
 						<li>Conversa sobre boas práticas</li>
 						<li>Esquecer a filosofia: Beleza e Paciência</li>
 					</ul>
 				</section>
 
 				<section>
+					<h3>Clean Coder Rule</h2>
+					<p>Sempre deixe o código mais limpo do que você o encontrou.</p>
+					<img data-src="./img/clean_coder_rule.jpg" alt="Clean Code Rule"/>
+					<p>Com cuidado obviamente</p>
+				</section>
+
+				<section>
 					<h3>Clean Code em projetos novos</h3>
 					<ul>
-						<li>Atribua nomes intencionais</li>
+						<li>Comece pelos nomes</li>
 						<li>Teste a separação de métodos</li>
-						<li>Leia algumas páginas do Clean Code por dia e teste o que aprendeu</li>
+						<li>Leia algumas páginas do Clean Code</li>
+						<li>Teste o que aprendeu</li>
+						<li>Discuta com outros integrantes da equipe</li>
 					</ul>
 				</section>
 
@@ -558,276 +572,32 @@ action4();
 					<p>Começamos onde estamos, com o que temos e fazendo o que podemos</p>
 				</section>
 
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
+				<section data-background="./img/home.png">
+					<h3>Obrigado!</h3>
+					<p>Espero ter contribuído!</p>
+					<p>Apresentação disponível em:</p>
+					<p><a href="http://ceduliocezar.com/talks/clean-code-culture" target="blank">http://ceduliocezar.com/talks/clean-code-culture</a></p>
 				</section>
 
 				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
+					<section data-background="./img/references.jpeg">
+						<h2>Referências</h2>
 					</section>
+
 					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
+						<img data-src="./img/cleancode.jpg" alt="Clean Code Book Image"/>
 					</section>
-				</section>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
+					<section>
+						<img data-src="./img/codecomplete.jpg" alt="Code Complete Book Image"/>
+					</section>
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+					<section>
+						<a href="https://www.youtube.com/watch?v=_Zqhs1IhGx4" target="blank">
+							<p>JeremyBytes - Clean Code: Homicidal Maniacs Read Code, Too!</p>
 						</a>
+						<iframe width="420" height="315" src="https://www.youtube.com/embed/_Zqhs1IhGx4" frameborder="0" allowfullscreen></iframe>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
 				</section>
 
 			</div>
