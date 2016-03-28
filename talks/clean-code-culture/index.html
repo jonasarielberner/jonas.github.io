@@ -55,13 +55,6 @@
 				<section>
 					<p>O que você me diz desse código?</p>
 					<img width="800" height="600" data-src="./img/compare1.png" alt="Code example"/>
-					<aside class="notes">
-						Existem algumas opões
-						Bom
-						Regular
-						Ruim
-						Tanto faz, esse código não é meu
-					</aside>
 				</section>
 
 				<section>
@@ -99,7 +92,7 @@
 					<p>Eu diria que sempre existe aquele projeto...</p>
 				</section>
 
-				<section>
+				<section data-background="./img/clean_code_start.jpg">
 					<h2>Como eu comecei</h2>
 				</section>
 
@@ -109,10 +102,9 @@
 						<li>Códigos macarrônicos</li>
 						<li>Falta de documentação</li>
 						<li>Bugs que vão e voltam</li>
-						<li>Equipe acomodada e conformada</li>
+						<li>Equipe conformada</li>
 						<li>Muitos 'incêndios' para apagar</li>
 					</ul>
-					<p class="fragment">Você já não viu isso em algum lugar?</p>
 				</section>
 
 				<section>
@@ -126,7 +118,7 @@
 						<li>Média mensal de chamados reduzido</li>
 						<li>Maior participação dos integrantes</li>
 						<li>Equipe com mais tempo para pesquisa</li>
-						<li>Pouquíssimos indíces de incêndios</li>
+						<li>Pouquíssimos indíces de 'incêndios'</li>
 						<li>Equipe de testes com mais tempo para testar o business</li>
 					</ul>
 				</section>
@@ -208,14 +200,19 @@
 				<section>
 						<h2>Nomes pronunciáveis</h2>
 						<p>Atribua nomes que sejam pronunciáveis em uma conversa</p>
-						<aside class="notes">
-							Já imaginou você tentando falar sobre aquela classe que você não consegue nem pronunciar o nome?
-						</aside>
+				</section>
+
+				<section>
+					<p>Imagine uma chamada...</p>
+					<ul>
+						<li>valorATPFM00NZP</li>
+						<li>valorATPFM01NTT</li>
+					</ul>
 				</section>
 
 				<section>
 					<h2>Nomes não ambíguos</h2>
-					<p class="fragment">Considere a seguinte variável: valorFP</p>
+					<p>Considere a seguinte variável: valorFP</p>
 					<p class="fragment">Valor forma pagamento?</p>
 					<p class="fragment">Valor final do produto?</p>
 				</section>
@@ -324,26 +321,34 @@ salvar3();
 				</section>
 
 				<section>
-					<h3>Métodos curtos</h3>
+					<h3>Métodos devem...</h3>
 					<ul>
-						<li>Devem caber em uma tela</li>
-						<li>Robert C. Martin estipula métodos de 20 linhas</li>
-						<li>Mesmo aqueles pequenos 'if' devem ser extraídos</li>
+						<li>Caber em uma tela</li>
+						<li>Promover a coesão</li>
+						<li>Evitar o acoplamento</li>
+						<li>Ser testáveis</li>
 					</ul>
+					<p class="fragment">Em resumo, métodos pequenos!</p>
 				</section>
 
 				<section>
 					<h2>Mas porquê diminuir?</h2>
-					<p>Com a diminuição do tamanho dos métodos você aumenta a possibilidade de reuso</p>
+					<p>Com a diminuição de tamanho a possibilidade de reuso aumenta</p>
+					<p class="fragment">Afinal, que outro cenário utilizaria aquele método que no mesmo bloco valida, salva, formata, conecta no banco e abre outra tela?</p>
 				</section>
 
 				<section>
 					<h3>Como reduzir o tamanho dos métodos?</h3>
 					<ul>
-						<li>Defina estipule um tamanho máximo</li>
-						<li>Separe os métodos em níveis diferentes</li>
-						<li>Aplicar os conceitos DRY e SRP</li>
+						<li>Estipule um tamanho máximo</li>
+						<li>Separe mentalmente em níveis</li>
+						<li>Aplique os conceitos DRY e SRP</li>
 					</ul>
+				</section>
+
+				<section>
+					<h3>Níveis de métodos?</h3>
+					<img data-src="./img/niveis.jpg" alt="Circulos exemplificando diferença de níveis dos métodos"/>
 				</section>
 
 				<section>
@@ -351,6 +356,7 @@ salvar3();
 					<ul>
 						<li>Evite repetição, avance na abstração</li>
 						<li>Extraia pequenos trechos</li>
+						<li>Fuja do Copy'n Pasta</li>
 					</ul>
 					<p>Código duplicado dificulta a manutenção</p>
 					<h2 class="fragment">Novamente, básico mas muita gente não faz!</h2>
@@ -445,7 +451,7 @@ salvar3();
 				</section>
 
 				<section>
-					<h2>Evite Código comentado</h2>
+					<h2>Evite código comentado</h2>
 					<pre><code class="hljava" data-trim contenteditable>
 //private MenuProcess criarMenuCadastro() {
 //	MenuProcess menuCadastro = new MenuProcess();
@@ -461,8 +467,18 @@ salvar3();
 
 					<ul class="fragment">
 						<li>Ficará lá para sempre</li>
+						<li>Atrapalha a leitura</li>
 						<li>Utilize VCS para isso</li>
 					</ul>
+
+				</section>
+
+				<section>
+					<h2>Duvida?</h2>
+
+					<img class="fragment" data-src="./img/codigo_comentado_cabecalho.png" alt="Código minimizado com várias linhas"/>
+
+					<img class="fragment" data-src="./img/codigo_comentado.png" alt="Código com várias linhas comentadas"/>
 
 				</section>
 
@@ -473,18 +489,18 @@ salvar3();
 				</section>
 
 				<section>
-					<img data-src="./img/comparing.png" alt="Todas as informações são fornecidas pelo VCS"/>
-				</section>
-
-				<section>
-					<h2>Número de colunas</h2>
+					<h2>Limite de colunas</h2>
 					<ul>
 						<li>Padrão antigo entre 80 ~ 100</li>
 						<li>Padrão novo entre 100 ~ 120 colunas</li>
-						<li>Facilita o merge</li>
 						<li>Facilita o uso de formatação automática</li>
 						<li class="fragment highlight-red">A equipe deve decidir, não somente uma pessoa</li>
 					</ul>
+				</section>
+
+				<section>
+					<h2>Facilite o merge</h2>
+					<img data-src="./img/comparing.png" alt="Código com linhas intermináveis"/>
 				</section>
 
 				<section data-background="./img/crash.jpg">
@@ -494,7 +510,6 @@ salvar3();
 
 				<section>
 					<h3>Quantas vezes você ja viu isso?</h3>
-
 					<img data-src="./img/exception.jpg" alt="Erro não tratado corretamente"/>
 				</section>
 
@@ -535,19 +550,26 @@ salvar3();
 					<p>Caberia uma apresentação inteira sobre testes unitários e TDD</p>
 				</section>
 
-				<section>
-					<section>
-						<h3>Você pode até não concordar com TDD</h3>
-						<p>O importante é ter pelo menos testes unitários caso contrário...</p>
-					</section>
 
-					<section data-background="./img/notests.gif">
-					</section>
+				<section>
+					<h3>Você pode até não concordar com TDD</h3>
+					<p>Sem problemas, oi importante é ter pelo menos testes unitários caso contrário...</p>
 				</section>
+
+				<section data-background="./img/notests.gif">
+				</section>
+
 
 				<section data-background="./img/culture.jpg">
 					<h2>Clean Code Culture</h2>
 					<p>Muito mais que um checklist</p>
+				</section>
+
+				<section>
+					<h3>Clean Coder Rule</h2>
+					<p>Sempre deixe o código mais limpo do que você o encontrou.</p>
+					<img data-src="./img/clean_coder_rule.jpg" alt="Clean Code Rule"/>
+					<p class="fragment highlight-red">Com cuidado obviamente!</p>
 				</section>
 
 				<section>
@@ -558,13 +580,12 @@ salvar3();
 						<li>Conversa sobre boas práticas</li>
 						<li>Esquecer a filosofia: Beleza e Paciência</li>
 					</ul>
+					<p class="fragment">Promover ambiente colaborativo!</p>
 				</section>
 
-				<section>
-					<h3>Clean Coder Rule</h2>
-					<p>Sempre deixe o código mais limpo do que você o encontrou.</p>
-					<img data-src="./img/clean_coder_rule.jpg" alt="Clean Code Rule"/>
-					<p>Com cuidado obviamente</p>
+				<section data-background="./img/broken.jpg">
+					<h3>Teoria das janelas quebradas</h2>
+					<p>Clean Code para manter as janelas intactas</p>
 				</section>
 
 				<section>
