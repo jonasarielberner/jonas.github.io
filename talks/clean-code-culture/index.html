@@ -49,34 +49,28 @@
 				</section>
 
 				<section>
-					<h2>Exercício</h2>
+					<h2>Exercício comparação</h2>
 				</section>
 
 				<section>
-					<p>O que você me diz desse código?</p>
-					<img width="800" height="600" data-src="./img/compare1.png" alt="Code example"/>
+					<img data-src="./img/compare1.png" alt="Code example"/>
 				</section>
 
 				<section>
-					<p>O que acha de mudarmos algumas coisas?</p>
+					<img data-src="./img/compare2.png" alt="Code example"/>
 				</section>
 
 				<section>
-					<p>Que tal?</p>
-					<img width="462" height="213" data-src="./img/compare2.png" alt="Code example"/>
-				</section>
-
-				<section>
-					<h3>Ficou simples não é?</h3>
+					<h3>Qual é mais simples de entender?</h3>
 				</section>
 
 				<section>
 					<h2>É disso que se trata o Clean Code!</h2>
-					<ul>
-						<li class="fragment">Legível</li>
-						<li class="fragment">Sustentável (Manutenível)</li>
-						<li class="fragment">Testável</li>
-						<li class="fragment">Elegante</li>
+					<ul class="fragment">
+						<li>Legível</li>
+						<li>Sustentável (Manutenível)</li>
+						<li>Testável</li>
+						<li>Elegante</li>
 					</ul>
 				</section>
 
@@ -117,9 +111,9 @@
 					<ul>
 						<li>Média mensal de chamados reduzido</li>
 						<li>Maior participação dos integrantes</li>
-						<li>Equipe com mais tempo para pesquisa</li>
+						<li>Equipe com mais tempo para pesquisas</li>
 						<li>Pouquíssimos indíces de 'incêndios'</li>
-						<li>Equipe de testes com mais tempo para testar o business</li>
+						<li>Taxa de retorno da homologação despencou</li>
 					</ul>
 				</section>
 
@@ -131,8 +125,8 @@
 					<h2>Devemos mesmo nos importar?</h2>
 					<p class="fragment">Boa parte do tempo passamos lendo código</p>
 					<ul class="fragment">
-						<li>Bug fixes</li>
-						<li>Business changes</li>
+						<li>Correção de erros</li>
+						<li>Alteração da regra de negócio</li>
 						<li>Melhorias</li>
 						<li>Novas funcionalidades</li>
 					</ul>
@@ -142,7 +136,7 @@
 
 				<section data-background="./img/bike2.jpg">
 					<h2>Como nem tudo são flores</h2>
-					<h4 class="fragment">Subjetividade</h4>
+					<h4>Subjetividade</h4>
 				</section>
 
 				<section>
@@ -159,13 +153,13 @@
 				<section data-background="./img/bokeh.jpg">
 					<h3>Se o Clean Code é tão bom...</h3>
 					<p>Porque não o vemos em ação com tanta frequência?</p>
-					<ul>
-						<li class="fragment">Ignorância</li>
-						<li class="fragment">Teimosia</li>
-						<li class="fragment">Sindrome do tempo de vida curto</li>
-						<li class="fragment">Arrogância</li>
-						<li class="fragment">Segurar o trabalho</li>
-						<li class="fragment">Depois nós arrumamos</li>
+					<ul class="fragment">
+						<li>Ignorância</li>
+						<li>Teimosia</li>
+						<li>Sindrome do tempo de vida curto</li>
+						<li>Arrogância</li>
+						<li>Segurar o trabalho</li>
+						<li>Depois nós arrumamos</li>
 					</ul>
 				</section>
 
@@ -178,12 +172,12 @@
 				<section>
 					<h2>Conceitos</h2>
 					<ul>
-						<li>Nomenclatura</li>
-						<li class="fragment">Princípio da Responsabilidade Única</li>
-						<li class="fragment">Redução do uso de comentários</li>
-						<li class="fragment">Testes</li>
-						<li class="fragment">Bom senso</li>
-						<li class="fragment">Cultura</li>
+						<li>Atenção a atribuição de nomes</li>
+						<li>Princípio da Responsabilidade Única</li>
+						<li>Redução do uso de comentários</li>
+						<li>Implementação de testes</li>
+						<li>Mudança de cultura</li>
+						<li>Bom senso</li>
 					</ul>
 				</section>
 
@@ -198,11 +192,9 @@
 				</section>
 
 				<section>
-						<h2>Nomes pronunciáveis</h2>
-						<p>Atribua nomes que sejam pronunciáveis em uma conversa</p>
-				</section>
+					<h2>Nomes pronunciáveis</h2>
+					<p>Atribua nomes pronunciáveis em uma conversa</p>
 
-				<section>
 					<p>Imagine uma chamada...</p>
 					<ul>
 						<li>valorATPFM00NZP</li>
@@ -213,8 +205,6 @@
 				<section>
 					<h2>Nomes não ambíguos</h2>
 					<p>Considere a seguinte variável: valorFP</p>
-					<p class="fragment">Valor forma pagamento?</p>
-					<p class="fragment">Valor final do produto?</p>
 				</section>
 
 				<section>
@@ -235,50 +225,70 @@
 				</section>
 
 				<section>
-					<p>lista</p>
-					<ul>
-						<li>Não muito bom</li>
-						<li class="fragment">Qual é a tipagem?</li>
-						<li class="fragment">Qual o seu propósito?</li>
+					<p>O que você pode dizer sobre o seguinte membro de uma classe:</p>
+					<pre><code class="hljava" data-trim contenteditable>
+...
+private Collection lista;
+...
+					</code></pre>
+					<div class="fragment">
+						<ul>
+							<li>Não muito bom</li>
+							<li>Qual é a tipagem?</li>
+							<li>Qual o seu propósito?</li>
+						</ul>
+						<p>Talvez possamos melhorar...</p>
+					</div>
+				</section>
+
+				<section>
+					<pre><code class="hljava" data-trim contenteditable>
+...
+private Collection listaProdutos;
+...
+					</code></pre>
+
+					<ul class="fragment">
+						<li>Um pouco melhor</li>
+						<li>Sabemos a tipagem</li>
+						<li>Mas pra que ele serve?</li>
 					</ul>
 				</section>
 
 				<section>
-					<p>listaProdutos</p>
-					<ul>
-						<li class="fragment">Um pouco melhor</li>
-						<li class="fragment">Sabemos a tipagem</li>
-						<li class="fragment">Mas pra que ele serve?</li>
-					</ul>
-				</section>
+					<pre><code class="hljava" data-trim contenteditable>
+...
+private Collection catalogoProdutos;
+...
+					</code></pre>
 
-				<section>
-					<p>catalogoProdutos</p>
-					<ul>
-						<li class="fragment">Sabemos a tipagem</li>
-						<li class="fragment">Temos idéia da intenção</li>
+					<ul class="fragment">
+						<li>Sabemos a tipagem</li>
+						<li>Temos idéia da intenção</li>
+						<li>Dependendo do contexto isso é suficiente</li>
 					</ul>
 				</section>
 
 				<section>
 					<h2>Agora que ja sabemos o nome</h2>
 					<p>Qual padrão de nome vamos utilizar?</p>
-					<ul>
-						<li class="fragment">catalogoProdutos</li>
-						<li class="fragment">CatalogoProdutos</li>
-						<li class="fragment">catalogo_produtos</li>
-						<li class="fragment">_catalogoProdutos</li>
-					</ul>
+
+						<pre><code class="hljava" data-trim contenteditable>
+
+...
+	private Collection catalogoProdutos;
+	private Collection CatalogoProdutos;
+	private Collection catalogo_produtos;
+	private Collection _catalogoProdutos;
+...
+						</code></pre>
+
 				</section>
 
 				<section>
 					<h2>Não importa...</h2>
 					<p>Desde que toda a equipe utilize o padrão</p>
-					<p class="fragment">Priorize o padrão da comunidade</p>
-
-					<aside class="notes">
-						Isso costuma inflamar muito as dicussões, e no final o que importa mesmo é se todo mundo segue.
-					</aside>
+					<p>Priorize o padrão da comunidade</p>
 				</section>
 
 				<section>
@@ -295,15 +305,16 @@
 				<section>
 					<h3>OK, já falamos de nomes de variáveis, mas e os métodos?</h3>
 					<pre><code class="hljava" data-trim contenteditable>
-action1();
-action2();
-action3();
-action4();
-salvar1();
-salvar2();
-salvar3();
+...
+	action1();
+	action2();
+	action3();
+	action4();
+	salvar1();
+	salvar2();
+	salvar3();
+...
 					</code></pre>
-
 				</section>
 
 				<section>
@@ -326,9 +337,9 @@ salvar3();
 						<li>Caber em uma tela</li>
 						<li>Promover a coesão</li>
 						<li>Evitar o acoplamento</li>
-						<li>Ser testáveis</li>
+						<li>Ser facilmente testados</li>
 					</ul>
-					<p class="fragment">Em resumo, métodos pequenos!</p>
+					<p class="fragment">Em resumo, métodos pequenos acordo com o propósito da classe que os detém!</p>
 				</section>
 
 				<section>
@@ -341,13 +352,46 @@ salvar3();
 					<h3>Como reduzir o tamanho dos métodos?</h3>
 					<ul>
 						<li>Estipule um tamanho máximo</li>
-						<li>Separe mentalmente em níveis</li>
 						<li>Aplique os conceitos DRY e SRP</li>
+						<li>Separe mentalmente em níveis</li>
 					</ul>
 				</section>
 
 				<section>
-					<h3>Níveis de métodos?</h3>
+					<h3>Níveis de métodos</h3>
+					<ul>
+						<li>Alto</li>
+							<ul>
+								<li>Visão geral</li>
+								<li>Não entra em detalhes</li>
+								<li>Normalmente compoẽm a interface publica da classe</li>
+							</ul>
+						<li>Médio
+								<ul>
+									<li>Aborda um pouco mais o problema</li>
+									<li>Normalmente métodos com visibilidade protegida</li>
+								</ul>
+						</li>
+					</ul>
+
+				</section>
+
+				<section>
+					<h3>Níveis de métodos</h3>
+					<ul>
+					<li>Baixo
+						<ul>
+							<li>Normalmente não passam de 5 linhas</li>
+							<li>Com frequência alteram o estado do objeto</li>
+							<li>Métodos privados</li>
+						</ul>
+					</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<p>Quanto mais próximo do 'núcleo' maior a chance desse método alterar o estado do objeto</p>
 					<img data-src="./img/niveis.jpg" alt="Circulos exemplificando diferença de níveis dos métodos"/>
 				</section>
 
@@ -367,6 +411,7 @@ salvar3();
 					<ul>
 						<li>Faça uma coisa só!</li>
 						<li>Fuja dos God Objects</li>
+						<li>Aplica-se a métodos, classes, variáveis de controle</li>
 					</ul>
 					<p class="fragment">Uma boa pista são métodos que formatam e logo apresentam os dados</p>
 				</section>
@@ -440,14 +485,15 @@ salvar3();
 				</section>
 
 				<section>
-					<h2>Conheça suas ferramentas</h2>
-					<img data-src="./img/know_your_tools.png"/>
-				</section>
-
-				<section>
 					<h2>Resistência a mudança</h2>
 					<p>Remoção do Journaling</p>
 					<img class="fragment" data-src="./img/versionning.png" alt="Todas as informações são fornecidas pelo VCS"/>
+				</section>
+
+
+				<section>
+					<h2>Conheça suas ferramentas</h2>
+					<img data-src="./img/know_your_tools.png"/>
 				</section>
 
 				<section>
@@ -474,18 +520,18 @@ salvar3();
 				</section>
 
 				<section>
-					<h2>Duvida?</h2>
+					<p>Em dúvida sobre se deve ou não deixar código comentado? Método de de quase 200 linhas e boa parte dele são códigos comentados...</p>
 
-					<img class="fragment" data-src="./img/codigo_comentado_cabecalho.png" alt="Código minimizado com várias linhas"/>
+					<img data-src="./img/codigo_comentado_cabecalho.png" alt="Código minimizado com várias linhas"/>
 
-					<img class="fragment" data-src="./img/codigo_comentado.png" alt="Código com várias linhas comentadas"/>
+					<img data-src="./img/codigo_comentado.png" alt="Código com várias linhas comentadas"/>
 
 				</section>
 
 				<section data-background="./img/columns.jpg">
 					<h2>Número de colunas</h2>
 					<p>if(getTextView().getText().toString().equalsIgnoreCase(ordemServicoComercial.getNumOS()))</p>
-					<p class="fragment">Não crie linhas intermináveis</p>
+					<p>Não crie linhas intermináveis</p>
 				</section>
 
 				<section>
@@ -499,7 +545,21 @@ salvar3();
 				</section>
 
 				<section>
-					<h2>Facilite o merge</h2>
+					<p>Falando em formatação automática...</p>
+					<p>Membros da mesma equipe deveria utilizar o mesmo estilo de workspace</p>
+
+					<img data-src="./img/comparando_alteracoes_em_source.png" alt="Código com várias linhas alteradas"/>
+				</section>
+
+				<section>
+					<p>Com finalidade de facilitar o merge</p>
+
+					<img data-src="./img/comparando_alteracoes_em_source__facilitado.png" alt="Código somente com alterações relevantes"/>
+				</section>
+
+
+				<section>
+					<p>Imagine um merge em linhas intermináveis</p>
 					<img data-src="./img/comparing.png" alt="Código com linhas intermináveis"/>
 				</section>
 
@@ -520,13 +580,13 @@ salvar3();
 				</section>
 
 				<section>
-					<h2>Know your tools</h2>
-					<img data-src="./img/exception3.jpg" alt="Ilustração"/>
+					<p>Sim, todos os catchs fazem a mesma coisa</p>
+					<img data-src="./img/exception2.jpg" alt="Tratamento incorreto"/>
 				</section>
 
 				<section>
-					<p>Sim, todos os catchs fazem a mesma coisa</p>
-					<img data-src="./img/exception2.jpg" alt="Tratamento incorreto"/>
+
+					<img data-src="./img/exception3.jpg" alt="Ilustração"/>
 				</section>
 
 				<section data-background="./img/testing.jpg">
@@ -546,19 +606,16 @@ salvar3();
 				</section>
 
 				<section>
-					<h3>TDD</h3>
-					<p>Caberia uma apresentação inteira sobre testes unitários e TDD</p>
+					<p>Caberia uma apresentação inteira sobre testes unitários e Test Driven Development(TDD)</p>
 				</section>
-
 
 				<section>
 					<h3>Você pode até não concordar com TDD</h3>
-					<p>Sem problemas, oi importante é ter pelo menos testes unitários caso contrário...</p>
+					<p>Sem problemas, a idéia principal ter testes unitários que possam ser repetidos sempre. Caso contrário...</p>
 				</section>
 
 				<section data-background="./img/notests.gif">
 				</section>
-
 
 				<section data-background="./img/culture.jpg">
 					<h2>Clean Code Culture</h2>
