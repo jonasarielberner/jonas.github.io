@@ -34,6 +34,7 @@ func pageViewController(pageViewController: UIPageViewController, willTransition
 ```
 
 1 - We have to wrap the lastPendingViewController in case there are no pendingViewControllers.
+
 2 - Save the last pending viewController to use after when the transition completes.
 
 Ok, now that we have the index of the next possible current page we should implement the second method.
@@ -49,7 +50,8 @@ func pageViewController(pageViewController: UIPageViewController, didFinishAnima
 ```
 
 1 - This if statement validate if the page change transition ended. Otherwise we don't have to update the currentPageIndex, because the scroll was interrupted.
+
 2 - We attribute the index of the last pending view controller to the current.
 
 ### Credits
-Header image by [Hoach Le Dinh] (https://unsplash.com/photos/c8TWWQ5ZnUw)
+Header image by [Hoach Le Dinh](https://unsplash.com/photos/c8TWWQ5ZnUw)
