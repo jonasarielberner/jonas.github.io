@@ -31,63 +31,55 @@ This blog post assumes that you have a basic knowledge about layout constraints.
 3. Create a container view that will hold both images.
 Add a UIView (We will call it container) to the ViewController and pin it to the edges of it's parent.
 
+  <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_3.png">
 
+4. Add an image view that will sit at the left side of container.
+Drag an UIImageView (image1) inside the container and pin the leading, top and bottom edges to it's parent(container) with 0 constant value.
 
+  <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_4.png">
 
+  Don't  worry about Interface Builder complaining about width constraint for image1. We will solve this in a second.
 
+5. Create a constraint to define image1 width to be the same as container.
+Right click on the image1 on the component tree and drag to the container and select Equal Widths.
 
+    <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_5.png">
 
+    <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_5_1.png>
 
-## Don't Support Multiple screen
+6. Turning image1 width constraint into Proportional Width.
+Edit the constraint that you just add double clicking on it on on Size Inspector Menu.
 
-<img src="{{ site.baseurl }}/img/post1/android_support_multiple_screens.jpg" alt="Tweet complaining about support multiple screens">
+  <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_6.png">
 
-Let's assume that now your app is handling the rotation correctly and you want to show to your friends what amazing app you created.
+  Change the value of Multiplier, from 1.0 to 0.3 (or whatever percentage that you want). Setting the multiplier to 0.3 will make image1 take 30% of it's parent horizontally.
 
-You sent the apk file to them, everything is fine, until some of them start to report that some screens of your app just don't show entirely or the components look strange filling the screen horizontally (oh boy).
+  <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_6_1.png">
 
-This is a bit frustrating when you realize that you should have to create different '.xml' for every screen size.
+  After setting the width, fix the misplacement as suggested in IB and you should have something like this. Notice that set an image in image1.
 
-You might be thinking that your app won't support large screens or the small ones, because it's difficult to do that. Again, don't that, because if you go this way you are wasting the most successful feature of Android platform, that it runs on a huge variety of devices.
+  <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_6_2.png">
 
-One argument that you might think is that the app doesn't need to run on different devices. It can be true right now in your scenario, but even is these cases I recommend you learn how to create screens that support different sizes. I can tell you by experience that these kind of requirement can change really fast.
+7. Add another UIImageView that will sit at right side.
+Drag an UIImageView (image2) inside the container and pin trailing, top and bottom edges to it's parent with constant value 0.
+    <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_7.png">
 
-A place to start: [Android Screen Sizes](http://developer.android.com/training/multiscreen/screensizes.html)
+    IB will again complain about width constraint and we will solve as we did before, by now just ignore this warn.
 
-## Neglecting UI & UX
+    <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_7_1.png">
 
-At this moment your app it is running nicely through a variety of devices. You might end up asking some questions like:
+8. Create a constraint to define image2 width to be the same as container.
 
-- Why this isn't cool like apps from Google or Twitter?
-- Should I be concerned about this even as a software developer?
+  Right click on image2 on component tree and drag into container, select Equal Widths. Like we did in step 5.
 
+9. Turn image2 width constraint into Proportional Width.
 
-The bad news is that the answer for the last question is, YES you have to think about these kind of things,  and good news is that Google already developed pattern called Material Design, that will help you to create amazing apps.
+  Edit the constraint that you just created for image2 double clicking on it.Change value of Multiplier, from 1.0 to 0.7 (or whatever percentage that you want). Similar as we did in step 6.
 
-You can check that out here:
-[Material Design Introduction](https://www.google.com/design/spec/material-design/introduction.html)
+  Here are all the constraints for the views.
 
+  <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_9.png">
 
+After fix the misplacement in IB and define images for image views you will finally have a view controller like this:
 
-Before people that work as designers come here to complain about this I will explain myself. I know that this doesn't replace a UI & UX Engineer. But it's a good place start don't you think?
-
-
-## Forget basic concepts of OOP
-
-Now your app just rocketed, you have a great base of users and the features are popping out. Soon or later you will end up with a large code base and you will have to maintain and add more things.
-
-You might be in trouble if you don't keep in mind that you are programming in a OOP language and should be decoupling and reusing code. It may look obvious talking like that, but believe me in Android Universe it is common to see developers mixing everything in one class like Fragment.java, creating many 'God Objets'.
-
-hese God Objets do everything from presenting the data to the user, to access the database or network. This is a bad practice that difficult changes in code.
-
-Instead of create God Objects, use patterns in code to design your app. One book that I recommend  that helps to keep your code easy to read and maintain is Clean Code of Robert C. Martin.
-
-## Conclusion
-
-While some of the problems are only related to Android development some are not, specially when talking about code maintenance.
-
-What do you think?Would you add more points?
-
-Please, let me know.
-
-Image: Courtesy of Uncalno Tekno, avaiable at Flickr.<br/>Image License: Creative Commons 2.0.
+<img src="{{ site.baseurl }}/img/posts/proportional-constraints/proportional_views_final.png" alt="Final project">
