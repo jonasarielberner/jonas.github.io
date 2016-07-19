@@ -32,7 +32,6 @@ This blog post assumes that you have a basic knowledge about layout constraints.
 Add a UIView (We will call it container) to the ViewController and pin it to the edges of it's parent.
 
   <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_3.png">
-
 4. Add an image view that will sit at the left side of container.
 Drag an UIImageView (image1) inside the container and pin the leading, top and bottom edges to it's parent(container) with 0 constant value.
 
