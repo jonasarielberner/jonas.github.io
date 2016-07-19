@@ -39,13 +39,12 @@ Drag an UIImageView (image1) inside the container and pin the leading, top and b
   <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_4.png">
 
   Don't  worry about Interface Builder complaining about width constraint for image1. We will solve this in a second.
-
 5. Create a constraint to define image1 width to be the same as container.
 Right click on the image1 on the component tree and drag to the container and select Equal Widths.
 
     <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_5.png">
 
-    <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_5_1.png>
+    <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_5_1.png">
 
 6. Turning image1 width constraint into Proportional Width.
 Edit the constraint that you just add double clicking on it on on Size Inspector Menu.
