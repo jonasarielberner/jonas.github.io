@@ -21,6 +21,8 @@ What It's done here is basically add a container view that hold the UIViews that
 
 As usual x and y layouts constraints are required to satisfy AutoLayout.
 
+Source available to download [here](https://github.com/ceduliocezar/swift-labs/tree/master/ProportionalViews)
+
 ## Let's do it in 9 steps!!
 This blog post assumes that you have a basic knowledge about layout constraints.
 

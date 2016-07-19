@@ -2,7 +2,7 @@
 layout:     post
 title:      "How to keep track of current page of an UIPageViewController"
 subtitle:   "Keep track of your current page"
-date:       2016-03-06 13:30:00
+date:       2016-05-19 13:30:00
 author:     "Cedulio Cezar"
 header-img: "img/posts/swift-current-page/head.jpg"
 social-img: "img/posts/swift-current-page/head-social.jpg"
