@@ -31,7 +31,7 @@ This blog post assumes that you have a basic knowledge about layout constraints.
 3. Create a container view that will hold both images.
 Add a UIView (We will call it container) to the ViewController and pin it to the edges of it's parent.
 
-  <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_3.png">
+<img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_3.png">
 4. Add an image view that will sit at the left side of container.
 Drag an UIImageView (image1) inside the container and pin the leading, top and bottom edges to it's parent(container) with 0 constant value.
 
@@ -41,9 +41,9 @@ Drag an UIImageView (image1) inside the container and pin the leading, top and b
 5. Create a constraint to define image1 width to be the same as container.
 Right click on the image1 on the component tree and drag to the container and select Equal Widths.
 
-    <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_5.png">
+  <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_5.png">
 
-    <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_5_1.png">
+  <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_5_1.png">
 
 6. Turning image1 width constraint into Proportional Width.
 Edit the constraint that you just add double clicking on it on on Size Inspector Menu.
@@ -60,11 +60,11 @@ Edit the constraint that you just add double clicking on it on on Size Inspector
 
 7. Add another UIImageView that will sit at right side.
 Drag an UIImageView (image2) inside the container and pin trailing, top and bottom edges to it's parent with constant value 0.
-    <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_7.png">
+  <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_7.png">
 
-    IB will again complain about width constraint and we will solve as we did before, by now just ignore this warn.
+  IB will again complain about width constraint and we will solve as we did before, by now just ignore this warn.
 
-    <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_7_1.png">
+  <img src="{{ site.baseurl }}/img/posts/proportional-constraints/ios_proportional_views_7_1.png">
 
 8. Create a constraint to define image2 width to be the same as container.
 
