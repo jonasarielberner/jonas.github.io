@@ -15,16 +15,16 @@
   <meta content="{{ site.description }}" property="og:description">
 {% endif %}
 {% if page.url %}
-  <meta content="{{ page.url | prepend: site.baseurl }}" property="og:url">
+  <meta content="{{ page.url | prepend: site.url }}" property="og:url">
 {% endif %}
 {% if page.date %}
   <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
-  <meta content="{{ /about/ | prepend: site.baseurl }}" property="article:author">
+  <meta content="{{ /about/ | prepend: site.url }}" property="article:author">
 {% endif %}
 {% if page.social-img %}
-  <meta content="{{ page.social-img | prepend: site.baseurl }}" property="og:image">
+  <meta content="{{ page.social-img | prepend: site.url }}" property="og:image">
 {% else if page.header-img %}
-  <meta content="{{ page.header-img | prepend: site.baseurl }}" property="og:image">
+  <meta content="{{ page.header-img | prepend: site.url }}" property="og:image">
 {% else %}
   <meta content="/img/home.png" property="og:image">
 {% endif %}
