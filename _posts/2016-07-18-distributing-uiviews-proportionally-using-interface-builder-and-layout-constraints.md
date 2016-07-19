@@ -4,8 +4,9 @@ title:      "Distributing UIViews proportionally using Interface Builder and Lay
 subtitle:   "Using Proportional Constraints"
 date:       2016-07-18 19:27:00
 author:     "Cedulio Cezar"
-header-img: "img/post1/head.jpg"
-tags: [ios,swift,proportional image view,dev,tips]
+header-img: "img/posts/proportional-constraints/head.jpg"
+social-img: "img/posts/proportional-constraints/head-social.jpg"
+tags: [ios,swift,proportional image view,dev,tips, layout constraints]
 summary: "How to distribute UIViews proportionally using constraints"
 comments: True
 ---
