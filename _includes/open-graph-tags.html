@@ -19,7 +19,6 @@
 {% endif %}
 {% if page.date %}
   <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
-  <meta content="{{ /about/ | prepend: site.url }}" property="article:author">
 {% endif %}
 {% if page.social-img %}
   <meta content="{{ page.social-img | prepend: site.url }}" property="og:image">
