@@ -5,8 +5,8 @@ subtitle:   "Learn GIT couldn't be more funny"
 date:       2016-08-25 17:41:00
 author:     "Cedulio Cezar"
 tags: [git,programming,github]
-header-img: "img/posts/learngitbranching/head.jpg"
-social-img: "img/posts/learngitbranching/head-social.jpg"
+header-img: "img/posts/learngitbranching/head.png"
+social-img: "img/posts/learngitbranching/head-social.png"
 summary: "An interactive way to learn git branching"
 comments: True
 ---
@@ -23,13 +23,16 @@ From time to time I stumble upon some developers that don't know GIT or sometime
 ## What concepts Learngitbranching would teach me?
 
 There is an introduction sequence where it presents an introduction of to the majority of git commands and then in next lessons it starts to mix everything presented.
+
 <img src="{{ site.baseurl }}/img/posts/learngitbranching/local1.png" alt="Local level">{: .center-image }
 
-The second part is more related to working with remote, you learn how to merge and send your commits to the remote repository.
+The second part is more related to working with remote, you will learn how to merge and send your commits to the remote repository.
+
 <img src="{{ site.baseurl }}/img/posts/learngitbranching/remote.png" alt="Remote level">{: .center-image }
 
 If you have problems understanding english, the good news is that was translated to a bunch of languages =)
-<img src="{{ site.baseurl }}/img/posts/learngitbranching/remote.png" alt="Remote level">{: .center-image }
+
+<img src="{{ site.baseurl }}/img/posts/learngitbranching/translate.png" alt="Remote level">{: .center-image }
 
 ## Why not just read the official documentation?
 I know, the documentation is awesome but people are different and maybe other will learn more easily with a graphical representations.
