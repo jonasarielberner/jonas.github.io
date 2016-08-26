@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Interesting tool that you should be using to understand how GIT Branching works"
-subtitle:   "Learn GIT couldn't be more funny"
+subtitle:   "Learn GIT couldn't be more fun"
 date:       2016-08-25 17:41:00
 author:     "Cedulio Cezar"
 tags: [git,programming,github]
@@ -18,7 +18,7 @@ From time to time I stumble upon some developers that don't know GIT or sometime
 
 #### TL;DR
 
-[Learngitbranching.js](http://learngitbranching.js.org/) is a website that present graphically some concepts of GIT Branching and some exercises in a very funny way.
+[Learngitbranching.js](http://learngitbranching.js.org/) is a website that present graphically some concepts of GIT Branching and some exercises in a very fun way.
 
 ## What concepts Learngitbranching would teach me?
 
