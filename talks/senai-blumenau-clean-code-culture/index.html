@@ -65,6 +65,7 @@
 
 				<section>
 					<h2>Exercício comparação</h2>
+					<p>Os códigos a seguir fazem a mesma coisa</p>
 				</section>
 
 				<section>
@@ -77,10 +78,11 @@
 
 				<section>
 					<h3>Qual é mais simples de entender?</h3>
+					<p class="fragment">É disso que se trata o Clean Code!</p>
 				</section>
 
 				<section>
-					<h2>É disso que se trata o Clean Code!</h2>
+					<h4>Mas o que exatamente é o Clean Code?</h4>
 					<ul class="fragment">
 						<li>Legível</li>
 						<li>Sustentável (Manutenível)</li>
@@ -88,42 +90,24 @@
 						<li>Elegante</li>
 					</ul>
 				</section>
-
-				<section>
-					<section>
-						<p>Qual a situação da base de código que você está trabalhando?</p>
-					</section>
-					<section>
-						<img data-src="./img/compare1.png" alt="Code example"/>
-					</section>
-
-					<section>
-						<img data-src="./img/compare2.png" alt="Code example"/>
-					</section>
-				</section>
-
-				<section data-background="./img/incendio.png">
-					<p>Quantos 'incêndios' você precisou apagar no último ano?</p>
-				</section>
-
-				<section>
-					<p>Eu diria que sempre existe aquele projeto...</p>
-				</section>
-
 				<section data-background="./img/clean_code_start.jpg">
-					<h2>Antes de prosseguir...</h2>
+					<h2>Importante salientar...</h2>
 					<p>Como eu cheguei ao Clean Code?</p>
 				</section>
 
 				<section>
-					<h2>Imagine o caos</h2>
+					<h4>Situação caótica</h4>
 					<ul>
 						<li>Códigos macarrônicos</li>
 						<li>Falta de documentação</li>
 						<li>Bugs que vão e voltam</li>
-						<li>Equipe conformada</li>
-						<li>Muitos 'incêndios' para apagar</li>
+						<li>Equipe exausta</li>
+						<li>Muitos 'incêndios'</li>
 					</ul>
+				</section>
+
+				<section data-background="./img/alteracao_continua.gif">
+
 				</section>
 
 				<section>
@@ -132,10 +116,9 @@
 				</section>
 
 				<section>
-					<h2>Depois de alguns meses</h2>
+					<h2>Resultados</h2>
 					<ul>
-						<li>Média mensal de chamados reduzido</li>
-						<li>Maior participação dos integrantes</li>
+						<li>Média mensal de chamados despecou</li>
 						<li>Equipe com mais tempo para pesquisas</li>
 						<li>Pouquíssimos indíces de 'incêndios'</li>
 						<li>Taxa de retorno da homologação despencou</li>
@@ -143,11 +126,11 @@
 				</section>
 
 				<section data-background="./img/clean-code-reaction.gif">
-					<h2>Minha reação e da equipe</h2>
+					<h2>Reação da equipe</h2>
 				</section>
 
 				<section>
-					<h2>Devemos mesmo nos importar?</h2>
+					<h2>Eu preciso realmente disso?</h2>
 					<p class="fragment">Boa parte do tempo passamos lendo código</p>
 					<ul class="fragment">
 						<li>Correção de erros</li>
@@ -157,6 +140,14 @@
 					</ul>
 
 					<p class="fragment">Quem vai manter o código no futuro?</p>
+				</section>
+
+				<section data-background="./img/incendio.png">
+					<p>Quantos 'incêndios' você precisou apagar no último ano?</p>
+				</section>
+
+				<section>
+					<p>Eu diria que sempre existe aquele projeto...</p>
 				</section>
 
 				<section data-background="./img/bike2.jpg">
@@ -250,12 +241,13 @@
 				</section>
 
 				<section>
-					<p>O que você pode dizer sobre o seguinte membro de uma classe:</p>
+					<p>Considere o seguinte trecho de código:</p>
 					<pre><code class="hljava" data-trim contenteditable>
 ...
 private Collection lista;
 ...
 					</code></pre>
+					<p>A variável possui um bom nome?</p>
 					<div class="fragment">
 						<ul>
 							<li>Não muito bom</li>
@@ -267,6 +259,7 @@ private Collection lista;
 				</section>
 
 				<section>
+					<p>E que tal agora?</p>
 					<pre><code class="hljava" data-trim contenteditable>
 ...
 private Collection listaProdutos;
@@ -277,10 +270,12 @@ private Collection listaProdutos;
 						<li>Um pouco melhor</li>
 						<li>Sabemos a tipagem</li>
 						<li>Mas pra que ele serve?</li>
+						<li>Ainda falta informação de contexto</li>
 					</ul>
 				</section>
 
 				<section>
+					<p>Interessante, estamos trabalhando com vendas...</p>
 					<pre><code class="hljava" data-trim contenteditable>
 ...
 private Collection catalogoProdutos;
@@ -295,6 +290,22 @@ private Collection catalogoProdutos;
 				</section>
 
 				<section>
+					<p>Contextos complexo</p>
+					<pre><code class="hljava" data-trim contenteditable>
+...
+private Collection produtosProntaEntrega;
+private Collection produtosCarroEntrega;
+private Collection produtosSomenteAvista;
+...
+					</code></pre>
+
+					<ul class="fragment">
+						<li>Forneça informação ao leitor</li>
+						<li>Facilite o entendimento do uso</li>
+					</ul>
+				</section>
+
+				<section>
 					<h2>Agora que ja sabemos o nome</h2>
 					<p>Qual padrão de nome vamos utilizar?</p>
 
@@ -302,8 +313,11 @@ private Collection catalogoProdutos;
 
 ...
 	private Collection catalogoProdutos;
+
 	private Collection CatalogoProdutos;
+
 	private Collection catalogo_produtos;
+
 	private Collection _catalogoProdutos;
 ...
 						</code></pre>
@@ -364,21 +378,43 @@ private Collection catalogoProdutos;
 						<li>Evitar o acoplamento</li>
 						<li>Ser facilmente testados</li>
 					</ul>
-					<p class="fragment">Em resumo, métodos pequenos acordo com o propósito da classe que os detém!</p>
+				</section>
+				<section>
+					<p >Em resumo, métodos <h2>pequenos</h2> que façam parte do contexto da classe!</p>
+
 				</section>
 
 				<section>
-					<h2>Mas porquê diminuir?</h2>
-					<p>Com a diminuição de tamanho a possibilidade de reuso aumenta</p>
-					<p class="fragment">Afinal, que outro cenário utilizaria aquele método que no mesmo bloco valida, salva, formata, conecta no banco e abre outra tela?</p>
+					<p>Exemplo de método que não faz parte do contexto</p>
+					<pre><code class="java" data-trim contenteditable>
+public class Animal{
+
+	public void doTela(List< ItemPedido > list){
+		...
+		database.save(list);
+		mostrarDialog("Sua venda foi salva com sucesso!");
+		...
+	}
+
+
+}
+					</code></pre>
+
+					<p class="fragment">Parece um exemplo bobo, mas isso acontece muito!!</p>
+
+				</section>
+
+				<section>
+					<p>Mas porquê diminuir o tamanho dos métodos?<h2>REUSO</h2></p>
+					<p class="fragment">Afinal, que outro cenário utilizaria aquele método que valida, salva, formata, conecta no banco e desenha um pokémon na tela?</p>
 				</section>
 
 				<section>
 					<h3>Como reduzir o tamanho dos métodos?</h3>
 					<ul>
-						<li>Estipule um tamanho máximo</li>
-						<li>Aplique os conceitos DRY e SRP</li>
+						<li>Estipule um tamanho máximo(óbvio)</li>
 						<li>Separe mentalmente em níveis</li>
+						<li>Aplique os conceitos DRY e SRP</li>
 					</ul>
 				</section>
 
@@ -402,7 +438,6 @@ private Collection catalogoProdutos;
 				</section>
 
 				<section>
-					<h3>Níveis de métodos</h3>
 					<ul>
 					<li>Baixo
 						<ul>
@@ -416,7 +451,7 @@ private Collection catalogoProdutos;
 
 
 				<section>
-					<p>Quanto mais próximo do 'núcleo' maior a chance desse método alterar o estado do objeto</p>
+					<p>Setas indicam a dependência dos métodos</p>
 					<img data-src="./img/niveis.jpg" alt="Circulos exemplificando diferença de níveis dos métodos"/>
 				</section>
 
