@@ -112,13 +112,13 @@
 
 				<section>
 					<h2>Ponto de virada</h2>
-					<p>Adoção do Clean Code e patterns de arquitetura adequados</p>
+					<p>Adoção do <b>Clean Code</b> e patterns de arquitetura</p>
 				</section>
 
 				<section>
 					<h2>Resultados</h2>
 					<ul>
-						<li>Média mensal de chamados despecou</li>
+						<li>Redução média mensal de chamados</li>
 						<li>Equipe com mais tempo para pesquisas</li>
 						<li>Pouquíssimos indíces de 'incêndios'</li>
 						<li>Taxa de retorno da homologação despencou</li>
@@ -131,13 +131,15 @@
 
 				<section>
 					<h2>Eu preciso realmente disso?</h2>
-					<p class="fragment">Boa parte do tempo passamos lendo código</p>
-					<ul class="fragment">
-						<li>Correção de erros</li>
-						<li>Alteração da regra de negócio</li>
-						<li>Melhorias</li>
-						<li>Novas funcionalidades</li>
-					</ul>
+					<div class="fragment">
+						<p >Boa parte do tempo passamos lendo código</p>
+						<ul>
+							<li>Correção de erros</li>
+							<li>Alteração da regra de negócio</li>
+							<li>Melhorias</li>
+							<li>Novas funcionalidades</li>
+						</ul>
+					</div>
 
 					<p class="fragment">Quem vai manter o código no futuro?</p>
 				</section>
@@ -156,44 +158,43 @@
 				</section>
 
 				<section>
-					<h3>Não existe receita de bolo</h3>
+					<p>Não existe receita de bolo</p>
 					<ul>
-						<li>Legível</li>
-						<li>Sustentável</li>
-						<li>Testável</li>
-						<li>Elegante</li>
+						<li>Legível;</li>
+						<li>Sustentável;</li>
+						<li>Testável;</li>
+						<li>Elegante;</li>
 					</ul>
 					<p class="fragment">Devemos ter cautela.</p>
 				</section>
 
 				<section data-background="./img/bokeh.jpg">
-					<h3>Se o Clean Code é tão bom...</h3>
-					<p>Porque não o vemos em ação com tanta frequência?</p>
+					<h3>Se o Clean Code é tão bom,</h3>
+					<p>porque não o vemos em ação com tanta frequência?</p>
 					<ul class="fragment">
-						<li>Ignorância</li>
-						<li>Teimosia</li>
-						<li>Sindrome do tempo de vida curto</li>
-						<li>Arrogância</li>
-						<li>Segurar o trabalho</li>
-						<li>Depois nós arrumamos</li>
+						<li>Ignorância;</li>
+						<li>Teimosia;</li>
+						<li>Sindrome do tempo de vida curto;</li>
+						<li>Arrogância;</li>
+						<li>Segurar o trabalho;</li>
+						<li>Depois nós arrumamos;</li>
 					</ul>
 				</section>
 
 				<section>
-					<h3>O que realmente compõem o Clean Code?</h3>
-					<p>Conjunto de conceitos simples</p>
-					<p class="fragment">Que infelizmente muita gente não coloca em prática</p>
+					<h4>O que realmente compõem o Clean Code?</h4>
+					<p>Conjunto de conceitos simples, que infelizmente muita gente não coloca em prática</p>
 				</section>
 
 				<section>
-					<h2>Conceitos</h2>
+					<h3>Conceitos como, </h3>
 					<ul>
-						<li>Atenção a atribuição de nomes</li>
-						<li>Princípio da Responsabilidade Única</li>
-						<li>Redução do uso de comentários</li>
-						<li>Implementação de testes</li>
-						<li>Mudança de cultura</li>
-						<li>Bom senso</li>
+						<li>Atenção a atribuição de nomes;</li>
+						<li>Princípio da Responsabilidade Única;</li>
+						<li>Redução do uso de comentários;</li>
+						<li>Implementação de testes;</li>
+						<li>Mudança de cultura;</li>
+						<li>Bom senso;</li>
 					</ul>
 				</section>
 
@@ -203,7 +204,7 @@
 						<li>Nomes pronunciáveis</li>
 						<li>Nomes não ambíguos</li>
 						<li>Nomes intencionais</li>
-						<li class="fragment">Certa dificuldade para atribuir bons nomes</li>
+						<li>Dificuldade para atribuir</br> bons nomes</li>
 					</ul>
 				</section>
 
@@ -211,16 +212,23 @@
 					<h2>Nomes pronunciáveis</h2>
 					<p>Atribua nomes pronunciáveis em uma conversa</p>
 
-					<p>Imagine uma chamada...</p>
-					<ul>
-						<li>valorATPFM00NZP</li>
-						<li>valorATPFM01NTT</li>
-					</ul>
+					<div class="fragment">
+						<p>Imagine uma ligação telefônica...</p>
+						<ul>
+							<li>valorATPFM00NZP</li>
+							<li>valorATPFM01NTT</li>
+						</ul>
+					</div>
 				</section>
 
 				<section>
 					<h2>Nomes não ambíguos</h2>
-					<p>Considere a seguinte variável: valorFP</p>
+					<p>Considere a seguinte variável:</p>
+					<pre><code class="java" data-trim contenteditable>
+
+double valorFP = 0;
+
+					</code></pre>
 				</section>
 
 				<section>
@@ -242,7 +250,7 @@
 
 				<section>
 					<p>Considere o seguinte trecho de código:</p>
-					<pre><code class="hljava" data-trim contenteditable>
+					<pre><code class="java" data-trim contenteditable>
 ...
 private Collection lista;
 ...
@@ -260,57 +268,60 @@ private Collection lista;
 
 				<section>
 					<p>E que tal agora?</p>
-					<pre><code class="hljava" data-trim contenteditable>
+					<pre><code class="java" data-trim contenteditable>
 ...
 private Collection listaProdutos;
 ...
 					</code></pre>
 
 					<ul class="fragment">
-						<li>Um pouco melhor</li>
-						<li>Sabemos a tipagem</li>
+						<li>Um pouco melhor;</li>
+						<li>Sabemos a tipagem;</li>
 						<li>Mas pra que ele serve?</li>
-						<li>Ainda falta informação de contexto</li>
+						<li>Ainda falta informação </br>de contexto;</li>
 					</ul>
 				</section>
 
 				<section>
-					<p>Interessante, estamos trabalhando com vendas...</p>
-					<pre><code class="hljava" data-trim contenteditable>
+					<p>Talvez se mudarmos um pouco mais...</p>
+					<pre><code class="java" data-trim contenteditable>
 ...
 private Collection catalogoProdutos;
 ...
 					</code></pre>
 
-					<ul class="fragment">
-						<li>Sabemos a tipagem</li>
-						<li>Temos idéia da intenção</li>
-						<li>Dependendo do contexto isso é suficiente</li>
-					</ul>
+					<div class="fragment">
+						<p>Interessante, parece que estamos trabalhando com vendas.</p>
+						<ul>
+							<li>Sabemos a tipagem;</li>
+							<li>Temos idéia da intenção;</li>
+							<li>Dependendo do contexto</br>isso pode ser suficiente;</li>
+						</ul>
+					</div>
 				</section>
 
 				<section>
 					<p>Contextos complexo</p>
-					<pre><code class="hljava" data-trim contenteditable>
-...
-private Collection produtosProntaEntrega;
-private Collection produtosCarroEntrega;
-private Collection produtosSomenteAvista;
-...
+					<pre><code class="java" data-trim contenteditable>
+public class TelaVenda{
+
+	private Collection produtosProntaEntrega;
+	private Collection produtosCarroEntrega;
+	private Collection produtosSomenteAvista;
+
+}
 					</code></pre>
 
 					<ul class="fragment">
 						<li>Forneça informação ao leitor</li>
-						<li>Facilite o entendimento do uso</li>
+						<li>Facilite o entendimento</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Agora que ja sabemos o nome</h2>
-					<p>Qual padrão de nome vamos utilizar?</p>
+					<p>Agora que já sabemos como atribuir bons nomes, </br>qual padrão vamos utilizar?</p>
 
-						<pre><code class="hljava" data-trim contenteditable>
-
+						<pre><code class="java" data-trim contenteditable>
 ...
 	private Collection catalogoProdutos;
 
@@ -321,30 +332,32 @@ private Collection produtosSomenteAvista;
 	private Collection _catalogoProdutos;
 ...
 						</code></pre>
-
 				</section>
 
 				<section>
-					<h2>Não importa...</h2>
-					<p>Desde que toda a equipe utilize o padrão</p>
-					<p>Priorize o padrão da comunidade</p>
+					<h2>Não importa,</h2>
+					<ul>
+						<li>Desde que toda a equipe</br>utilize o padrão;</li>
+						<li>Priorize o padrão da comunidade;</li>
+						<li>Decisão da equipe;</li>
+					</ul>
 				</section>
 
 				<section>
 					<h2>Parece básico demais</h2>
 					<p>E realmente é!</p>
-					<p class="fragment highlight-red">Mas muita gente não faz!</p>
+					<p class="fragment highlight-red">Mas acredite, muita gente não faz!</p>
 				</section>
 
 				<section>
-					<h2>IU064</h2>
+					<p>Classes de um projeto qualquer...</p>
 					<img width="800" height="600" data-src="img/awful_class_name.png" alt="Awful class name"/>
 				</section>
 
 				<section>
-					<h3>OK, já falamos de nomes de variáveis, mas e os métodos?</h3>
-					<pre><code class="hljava" data-trim contenteditable>
-...
+					<p>OK, já falamos de nomes de variáveis,</br> mas e os métodos?</p>
+					<pre><code class="java" data-trim contenteditable>
+public class TelaVenda{
 	action1();
 	action2();
 	action3();
@@ -352,31 +365,34 @@ private Collection produtosSomenteAvista;
 	salvar1();
 	salvar2();
 	salvar3();
-...
+}
 					</code></pre>
 				</section>
 
 				<section>
-					<h3>Devemos aplicar as mesmas regras!</h3>
-					<ul>
-						<li>Nomes pronunciáveis</li>
-						<li>Nomes não ambíguos</li>
-						<li>Nomes intencionais</li>
-					</ul>
+					<h3>Advinha só?</h3>
+					<div class="fragment">
+						<p>Devemos aplicar as mesmas regras!</p>
+						<ul>
+							<li>Nomes pronunciáveis;</li>
+							<li>Nomes não ambíguos;</li>
+							<li>Nomes intencionais;</li>
+						</ul>
+					</div>
 				</section>
 
 				<section data-background="./img/srp.jpg">
-					<h3>Além dos nomes...</h3>
-					<p>Devemos nos preocupar com o que os nossos métodos fazem e como fazem.</p>
+					<h3>Entretanto, além dos nomes...</h3>
+					<p>Devemos nos preocupar com o que os nossos métodos <b>fazem e como fazem.</b></p>
 				</section>
 
 				<section>
 					<h3>Métodos devem...</h3>
 					<ul>
-						<li>Caber em uma tela</li>
-						<li>Promover a coesão</li>
-						<li>Evitar o acoplamento</li>
-						<li>Ser facilmente testados</li>
+						<li>Caber em uma tela;</li>
+						<li>Promover a coesão;</li>
+						<li>Evitar o acoplamento;</li>
+						<li>Ser facilmente testados;</li>
 					</ul>
 				</section>
 				<section>
@@ -406,31 +422,31 @@ public class Animal{
 
 				<section>
 					<p>Mas porquê diminuir o tamanho dos métodos?<h2>REUSO</h2></p>
-					<p class="fragment">Afinal, que outro cenário utilizaria aquele método que valida, salva, formata, conecta no banco e desenha um pokémon na tela?</p>
+					<p class="fragment">Afinal, que outro cenário utilizaria aquele método que valida, salva, formata, conecta no banco e desenha um <b>pokémon</b> na tela?</p>
 				</section>
 
 				<section>
-					<h3>Como reduzir o tamanho dos métodos?</h3>
+					<p>Auxílio na redução do tamanho dos métodos</p>
 					<ul>
-						<li>Estipule um tamanho máximo(óbvio)</li>
-						<li>Separe mentalmente em níveis</li>
-						<li>Aplique os conceitos DRY e SRP</li>
+						<li>Estipule um tamanho máximo(óbvio);</li>
+						<li>Quebre a responsabilidade</br>dos métodos em níveis;</li>
+						<li>Aplique conceitos para evitar repetição</br> e manter e responsabilidade única</li>
 					</ul>
 				</section>
 
 				<section>
-					<h3>Níveis de métodos</h3>
+					<h3>Hierarquia(níveis) de métodos</h3>
 					<ul>
 						<li>Alto</li>
 							<ul>
-								<li>Visão geral</li>
-								<li>Não entra em detalhes</li>
-								<li>Normalmente compoẽm a interface publica da classe</li>
+								<li>Visão geral;</li>
+								<li>Não entra em detalhes;</li>
+								<li>Normalmente compoẽm a interface publica da classe;</li>
 							</ul>
 						<li>Médio
 								<ul>
-									<li>Aborda um pouco mais o problema</li>
-									<li>Normalmente métodos com visibilidade protegida</li>
+									<li>Aborda um pouco mais o problema;</li>
+									<li>Normalmente métodos com visibilidade protegida;</li>
 								</ul>
 						</li>
 					</ul>
@@ -439,31 +455,32 @@ public class Animal{
 
 				<section>
 					<ul>
-					<li>Baixo
-						<ul>
-							<li>Normalmente não passam de 5 linhas</li>
-							<li>Com frequência alteram o estado do objeto</li>
-							<li>Métodos privados</li>
-						</ul>
-					</li>
+						<li>Baixo
+							<ul>
+								<li>Normalmente não passam de 5 linhas;</li>
+								<li>Com frequência alteram o estado do objeto;</li>
+								<li>Métodos privados;</li>
+							</ul>
+						</li>
 					</ul>
 				</section>
 
 
 				<section>
-					<p>Setas indicam a dependência dos métodos</p>
+					<p>Setas indicam a dependência dos métodos.</p>
 					<img data-src="./img/niveis.jpg" alt="Circulos exemplificando diferença de níveis dos métodos"/>
+					<p>Quanto mais próximo do núcleo</br>menor o método.</p>
 				</section>
 
 				<section>
 					<h3>Don't Repeat Yourself(DRY)</h3>
 					<ul>
-						<li>Evite repetição, avance na abstração</li>
-						<li>Extraia pequenos trechos</li>
-						<li>Fuja do Copy'n Pasta</li>
+						<li>Avance na abstração e evite repetição;</li>
+						<li>Extraia trechos em pequenos métodos</br> ou mesmo pequenas classes;</li>
+						<li>Fuja do Copy'n Pasta;</li>
 					</ul>
-					<p>Código duplicado dificulta a manutenção</p>
-					<h2 class="fragment">Novamente, básico mas muita gente não faz!</h2>
+					<p class="fragment highlight-red">Código duplicado dificulta a manutenção</p>
+					<h4 class="fragment">Novamente, básico mas muita gente não faz!</h4>
 				</section>
 
 				<section>
@@ -471,9 +488,8 @@ public class Animal{
 					<ul>
 						<li>Faça uma coisa só!</li>
 						<li>Fuja dos God Objects</li>
-						<li>Aplica-se a métodos, classes, variáveis de controle</li>
+						<li>Aplica-se a métodos, </br>classes, variáveis de controle;</li>
 					</ul>
-					<p class="fragment">Uma boa pista são métodos que formatam e logo apresentam os dados</p>
 				</section>
 
 				<section>
@@ -497,22 +513,13 @@ label.setText("Texto");
 				<section>
 
 					<h2>Talk is cheap. Show me the code!</h2>
-					<p>Mostrar source AIS Android - ComerciaisController</p>
-					<ul>
-						<li>God Object</li>
-						<li>Tamanho da interface publica</li>
-						<li>Diferença entre métodos</li>
-						<ul>
-							<li>carregaValoresOsComercial</li>
-							<li>atualizarCadastrosBasicos</li>
-						</ul>
-					</ul>
+					<p>Code time</p>
 				</section>
 
 
 				<section data-background="./img/notes.jpg">
 					<h3>Comentários, precisamos mesmo deles?</h3>
-					<pre><code class="hljava" data-trim contenteditable>
+					<pre><code class="java" data-trim contenteditable>
 //When I wrote this, only God and I understood what I was doing
 //Now, God only knows
 					</code></pre>
@@ -528,45 +535,58 @@ label.setText("Texto");
 				</section>
 
 				<section>
-					<h3>Comentários não melhoram código ruim</h3>
-					<p>Ao invés de sair comentando pense se o código não precisa de uma refatoração</p>
+					<p>Comentários não melhoram</p>
+					<h3>Código Ruim</h3>
+					<p>Ao invés de sair inserindo comentários</br> pense se o código não precisa de uma refatoração.</p>
 				</section>
 
 				<section>
 					<h3>Bom uso de comentários</h3>
 					<ul>
-						<li>Descrever uma intenção ou clarear algo
+						<li>Descrever uma intenção ou clarear algo;
 							<ul>
-								<li>// Formato da data yyyy-MM-dd</li>
+								<li>
+									<pre><code class="java" data-trim contenteditable>
+// Formato da data yyyy-MM-dd;
+									</code></pre>
+								</li>
 							</ul>
 						</li>
-						<li>Avisos ou consequências</li>
-						<li>TODO's, que devem ser temporários</li>
-						<li>Javadoc para uma API</li>
+						<li>Avisos ou consequências;</li>
+						<li>TODO's, que devem ser temporários;</li>
+						<li>Javadoc para uma API;</li>
 					</ul>
 				</section>
 
 				<section>
 					<h3>Comentários ruins</h3>
-					<ul>
-						<li>Comentários óbvios
-							<ul>
-								<li>// Default constructor</li>
-								<li>// lista de produtos</li>
-							</ul>
-						</li>
-						<li>Journaling
-							<ul>
-								<li>// 06/06/1666 - batman - adicionou o calculo</li>
-							</ul>
-						</li>
-					</ul>
+						<p>Comentários óbvios</p>
+
+						<pre><code class="java" data-trim contenteditable>
+// lista de produtos
+private Collection listaProdutos;
+						</code></pre>
+
+						<p>Journaling</p>
+						<pre><code class="java" data-trim contenteditable>
+public double getTotalVenda(){
+	// 06/06/1666 - batman - alterou o calculo mediante solicitação do Mário,
+	// adicionado fator multiplicacao - tarefa TF13123120
+	// 01/12/2006 - robin - adicinou desconto mediante solicitação fulando
+	double totalVenda = getTotalBruto() * getPorcentagemDesconto() * FATOR_MULTIPLICACAO_INVENTADO  ;
+	return totalVenda;
+}
+						</code></pre>
+
 				</section>
 
 				<section>
-					<h2>Resistência a mudança</h2>
-					<p>Remoção do Journaling</p>
-					<img class="fragment" data-src="./img/versionning.png" alt="Todas as informações são fornecidas pelo VCS"/>
+					<p>Normalmente encontro resistência</p>
+					<h2>Remoção do Journaling</h2>
+					<div class="fragment">
+						<img data-src="./img/versionning.png" alt="Imagem apresentando um histórico de commits em um repositório SVN"/>
+						<p>Histórico de commits de um repositório SVN, onde você pode salvar qualquer informação relevante.</p>
+					</div>
 				</section>
 
 
@@ -577,7 +597,7 @@ label.setText("Texto");
 
 				<section>
 					<h2>Evite código comentado</h2>
-					<pre><code class="hljava" data-trim contenteditable>
+					<pre><code class="java" data-trim contenteditable>
 //private MenuProcess criarMenuCadastro() {
 //	MenuProcess menuCadastro = new MenuProcess();
 //	menuCadastro.setText(getString(R.string.atividade_menu_aceite));
@@ -593,23 +613,28 @@ label.setText("Texto");
 					<ul class="fragment">
 						<li>Ficará lá para sempre</li>
 						<li>Atrapalha a leitura</li>
-						<li>Utilize VCS para isso</li>
+						<li>Utilize VCS</li>
 					</ul>
 
 				</section>
 
 				<section>
-					<p>Em dúvida sobre se deve ou não deixar código comentado? Método de de quase 200 linhas e boa parte dele são códigos comentados...</p>
+					<p>Em dúvida sobre se deve ou não deixar código comentado?</p>
 
 					<img data-src="./img/codigo_comentado_cabecalho.png" alt="Código minimizado com várias linhas"/>
 
-					<img data-src="./img/codigo_comentado.png" alt="Código com várias linhas comentadas"/>
+					<p>Método de quase 200 linhas</br>boa parte dele são códigos comentados...</p>
+				</section>
 
+				<section>
+					<img data-src="./img/codigo_comentado.png" alt="Método com várias linhas comentadas"/>
 				</section>
 
 				<section data-background="./img/columns.jpg">
 					<h2>Número de colunas</h2>
-					<p>if(getTextView().getText().toString().equalsIgnoreCase(ordemServicoComercial.getNumOS()))</p>
+					<pre><code class="java" data-trim contenteditable>
+if(getTextView().getText().toString().equalsIgnoreCase(ordemServicoComercial.getNumOS()))
+					</code></pre>
 					<p>Não crie linhas intermináveis</p>
 				</section>
 
@@ -624,22 +649,27 @@ label.setText("Texto");
 				</section>
 
 				<section>
-					<p>Falando em formatação automática...</p>
-					<p>Membros da mesma equipe deveriam utilizar o mesmo estilo de workspace</p>
-
-					<img data-src="./img/comparando_alteracoes_em_source.png" alt="Código com várias linhas alteradas"/>
-				</section>
-
-				<section>
-					<p>Com finalidade de facilitar o merge</p>
-
-					<img data-src="./img/comparando_alteracoes_em_source__facilitado.png" alt="Código somente com alterações relevantes"/>
-				</section>
-
-
-				<section>
-					<p>Imagine um merge em linhas intermináveis</p>
+					<p>Merge em arquivos com linhas intermináveis</p>
 					<img data-src="./img/comparing.png" alt="Código com linhas intermináveis"/>
+				</section>
+
+				<section>
+					<h3>Falando em formatação automática,</h3>
+					<p>Membros da mesma equipe devem utilizar</br> o mesmo estilo de workspace com a finalidade de:</p>
+					<ul>
+							<li>Evitar alterações desnecessárias;</li>
+							<li>Problemas com encoding;</li>
+					</ul>
+				</section>
+
+				<section>
+						<p>Commit sem estilo de workspace</p>
+						<img data-src="./img/comparando_alteracoes_em_source.png" alt="Código com várias linhas alteradas"/>
+				</section>
+
+				<section>
+					<p>Commit utilizando mesmo estilo de workspace</p>
+					<img data-src="./img/comparando_alteracoes_em_source__facilitado.png" alt="Código somente com alterações relevantes"/>
 				</section>
 
 				<section data-background="./img/crash.jpg">
@@ -654,13 +684,13 @@ label.setText("Texto");
 
 				<section>
 					<h3>De a devida atenção as exceptions</h3>
-					<p>Em geral, só faça um catch quando for realizar alguma ação ou melhorar a mensagem.</p>
-					<p>Caso contrário passe para 'cima'</p>
+					<p>Em geral só capture uma exceção quando for realizar alguma ação ou melhorar a mensagem.</p>
+					<p>Caso contrário passe para 'cima'.</p>
 				</section>
 
 				<section>
 					<p>Sim, todos os catchs fazem a mesma coisa</p>
-					<img data-src="./img/exception2.jpg" alt="Tratamento incorreto"/>
+					<img data-src="./img/exception2.jpg" alt="Utilização incorreta do tratamento de exceções"/>
 				</section>
 
 				<section>
@@ -676,21 +706,21 @@ label.setText("Texto");
 				<section>
 					<h3>Testes unitários</h3>
 					<p>Como seria testar um método gigante?</p>
-					<p>Todos os conceitos apresentados podem e devem ser aplicados aos testes</p>
+					<p>Todos os conceitos apresentados podem e devem ser aplicados aos testes.</p>
 				</section>
 
 				<section>
-					<p>Exemplo de teste pequeno para um formatador de moeda</p>
+					<p>Exemplo de teste simples para um formatador de moeda:</p>
 					<img data-src="./img/test.jpg" alt="Test code"/>
 				</section>
 
 				<section>
-					<p>Caberia uma apresentação inteira sobre testes unitários e Test Driven Development(TDD)</p>
+					<p>Caberia uma apresentação inteira sobre testes unitários e Test Driven Development(TDD).</p>
 				</section>
 
 				<section>
 					<h3>Você pode até não concordar com TDD</h3>
-					<p>Sem problemas, a idéia principal ter testes unitários que possam ser repetidos sempre. Caso contrário...</p>
+					<p>Sem problemas, a idéia principal ter testes unitários que possam ser repetidos.</p>
 				</section>
 
 				<section data-background="./img/notests.gif">
@@ -698,47 +728,51 @@ label.setText("Texto");
 				</section>
 
 				<section data-background="./img/culture.jpg">
-					<h2>Clean Code Culture</h2>
-					<p>Muito mais que um checklist</p>
+					<h2>Clean Code</h2>
+					<p>Muito mais que um checklist!</p>
 				</section>
 
 				<section>
+					<img data-src="./img/clean_coder_rule.jpg" alt="Clean Code Rule"/>
 					<h3>Clean Coder Rule</h2>
 					<p>Sempre deixe o código mais limpo do que você o encontrou.</p>
-					<img data-src="./img/clean_coder_rule.jpg" alt="Clean Code Rule"/>
-					<p class="fragment highlight-red">Com cuidado obviamente!</p>
+					<p>Com cuidado obviamente!</p>
 				</section>
 
 				<section>
 					<h3>Tudo isso depende...</h3>
 					<ul>
-						<li>Equipe comprometida com a qualidade</li>
-						<li>Cooperação</li>
-						<li>Conversa sobre boas práticas</li>
-						<li>Esquecer a filosofia: Beleza e Paciência</li>
+						<li>Equipe comprometida com a qualidade;</li>
+						<li>Cooperação;</li>
+						<li>Conversa sobre boas práticas;</li>
+						<li>Esquecer a filosofia: Beleza e Paciência;</li>
 					</ul>
-					<p class="fragment">Promova o ambiente colaborativo!</p>
+					<h2 class="fragment">Promova o ambiente colaborativo!</h2>
 				</section>
 
 				<section data-background="./img/broken.jpg">
-					<h3>Teoria das janelas quebradas</h2>
-					<p>Clean Code para manter as janelas intactas</p>
+					<h2>Teoria das janelas quebradas</h2>
+					<div class="fragment">
+						<h3>Clean Code</h3>
+						<p>Para manter as janelas intactas</p>
+					</div>
+
 				</section>
 
-				<section>
+				<section data-background="./img/new_projetcs.jpeg">
 					<h3>Clean Code em projetos novos</h3>
 					<ul>
-						<li>Comece pelos nomes</li>
-						<li>Teste a separação de métodos</li>
-						<li>Leia algumas páginas do Clean Code</li>
-						<li>Teste o que aprendeu</li>
-						<li>Discuta com outros integrantes da equipe</li>
+						<li>Comece pelos nomes;</li>
+						<li>Teste a separação de métodos;</li>
+						<li>Leia algumas páginas do Clean Code;</li>
+						<li>Teste o que aprendeu;</li>
+						<li>Discuta com outros integrantes da equipe;</li>
 					</ul>
 				</section>
 
 				<section data-background="./img/ant.jpg">
 					<h3>Clean Code em projetos antigos</h3>
-					<p>Começamos onde estamos, com o que temos e fazendo o que podemos</p>
+					<p>Começamos onde estamos, com o que temos e fazendo o que podemos.</p>
 				</section>
 
 				<section data-background="./img/be_the_change.jpg">
