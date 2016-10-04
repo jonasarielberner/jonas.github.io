@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="../reveal/css/reveal.css">
-		<link rel="stylesheet" href="../reveal/css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="../reveal/css/theme/night.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
@@ -42,9 +42,12 @@
 			<div class="slides">
 				<section data-background="./img/home.png">
 
-					<h2>Clean Code Culture</h2>
+					<h1>Clean Code Culture</h1>
 					<p>
-						<a href="http://ceduliocezar.com">Cedulio Cezar</a> / <a href="http://twitter.com/readablecoding">@readablecoding</a>
+						<a href="http://ceduliocezar.com">Cedulio Cezar</a>
+					</p>
+
+					<p><a href="https://twitter.com/readablecoding">@readablecoding</a>
 					</p>
 				</section>
 
@@ -77,12 +80,12 @@
 				</section>
 
 				<section>
-					<h3>Qual é mais simples de entender?</h3>
+					<h2>Qual é mais simples de entender?</h2>
 					<p class="fragment">É disso que se trata o Clean Code!</p>
 				</section>
 
 				<section>
-					<h4>Mas o que exatamente é o Clean Code?</h4>
+					<h2>Mas o que exatamente é o Clean Code?</h2>
 					<ul class="fragment">
 						<li>Legível</li>
 						<li>Sustentável (Manutenível)</li>
@@ -96,7 +99,7 @@
 				</section>
 
 				<section>
-					<h4>Situação caótica</h4>
+					<h2>Situação caótica</h2>
 					<ul>
 						<li>Códigos macarrônicos</li>
 						<li>Falta de documentação</li>
@@ -145,7 +148,7 @@
 				</section>
 
 				<section data-background="./img/incendio.png">
-					<p>Quantos 'incêndios' você precisou apagar no último ano?</p>
+					<h2>Quantos 'incêndios' você precisou apagar no último ano?</h2>
 				</section>
 
 				<section>
@@ -158,7 +161,7 @@
 				</section>
 
 				<section>
-					<p>Não existe receita de bolo</p>
+					<h2>Não existe receita de bolo</h2>
 					<ul>
 						<li>Legível;</li>
 						<li>Sustentável;</li>
@@ -169,7 +172,7 @@
 				</section>
 
 				<section data-background="./img/bokeh.jpg">
-					<h3>Se o Clean Code é tão bom,</h3>
+					<h2>Se o Clean Code é tão bom,</h2>
 					<p>porque não o vemos em ação com tanta frequência?</p>
 					<ul class="fragment">
 						<li>Ignorância;</li>
@@ -182,12 +185,12 @@
 				</section>
 
 				<section>
-					<h4>O que realmente compõem o Clean Code?</h4>
+					<h2>O que realmente compõem o Clean Code?</h2>
 					<p>Conjunto de conceitos simples, que infelizmente muita gente não coloca em prática</p>
 				</section>
 
 				<section>
-					<h3>Conceitos como, </h3>
+					<h2>Conceitos como, </h2>
 					<ul>
 						<li>Atenção a atribuição de nomes;</li>
 						<li>Princípio da Responsabilidade Única;</li>
@@ -249,7 +252,7 @@ double valorFP = 0;
 				</section>
 
 				<section>
-					<p>Considere o seguinte trecho de código:</p>
+					<h2>Considere o seguinte trecho de código:</h2>
 					<pre><code class="java" data-trim contenteditable>
 ...
 private Collection lista;
@@ -267,7 +270,7 @@ private Collection lista;
 				</section>
 
 				<section>
-					<p>E que tal agora?</p>
+					<h2>E que tal agora?</h2>
 					<pre><code class="java" data-trim contenteditable>
 ...
 private Collection listaProdutos;
@@ -283,7 +286,7 @@ private Collection listaProdutos;
 				</section>
 
 				<section>
-					<p>Talvez se mudarmos um pouco mais...</p>
+					<h2>Talvez se mudarmos um pouco mais...</h2>
 					<pre><code class="java" data-trim contenteditable>
 ...
 private Collection catalogoProdutos;
@@ -301,7 +304,7 @@ private Collection catalogoProdutos;
 				</section>
 
 				<section>
-					<p>Contextos complexo</p>
+					<h2>Contextos complexo</h2>
 					<pre><code class="java" data-trim contenteditable>
 public class TelaVenda{
 
@@ -319,7 +322,7 @@ public class TelaVenda{
 				</section>
 
 				<section>
-					<p>Agora que já sabemos como atribuir bons nomes, </br>qual padrão vamos utilizar?</p>
+					<h3>Agora que já sabemos como atribuir bons nomes, qual padrão vamos utilizar?</h3>
 
 						<pre><code class="java" data-trim contenteditable>
 ...
@@ -335,7 +338,7 @@ public class TelaVenda{
 				</section>
 
 				<section>
-					<h2>Não importa,</h2>
+					<h2>Não importa</h2>
 					<ul>
 						<li>Desde que toda a equipe</br>utilize o padrão;</li>
 						<li>Priorize o padrão da comunidade;</li>
@@ -350,12 +353,12 @@ public class TelaVenda{
 				</section>
 
 				<section>
-					<p>Classes de um projeto qualquer...</p>
+					<h4>Classes de um projeto qualquer...</h4>
 					<img width="800" height="600" data-src="img/awful_class_name.png" alt="Awful class name"/>
 				</section>
 
 				<section>
-					<p>OK, já falamos de nomes de variáveis,</br> mas e os métodos?</p>
+					<h3>OK, já falamos de nomes de variáveis,</br> mas e os métodos?</h3>
 					<pre><code class="java" data-trim contenteditable>
 public class TelaVenda{
 	action1();
@@ -370,7 +373,7 @@ public class TelaVenda{
 				</section>
 
 				<section>
-					<h3>Advinha só?</h3>
+					<h2>Advinha só?</h2>
 					<div class="fragment">
 						<p>Devemos aplicar as mesmas regras!</p>
 						<ul>
@@ -382,7 +385,7 @@ public class TelaVenda{
 				</section>
 
 				<section data-background="./img/srp.jpg">
-					<h3>Entretanto, além dos nomes...</h3>
+					<h2>Entretanto, além dos nomes...</h2>
 					<p>Devemos nos preocupar com o que os nossos métodos <b>fazem e como fazem.</b></p>
 				</section>
 
@@ -401,7 +404,7 @@ public class TelaVenda{
 				</section>
 
 				<section>
-					<p>Exemplo de método que não faz parte do contexto</p>
+					<h3>Exemplo de método que não faz parte do contexto</h3>
 					<pre><code class="java" data-trim contenteditable>
 public class Animal{
 
@@ -426,7 +429,7 @@ public class Animal{
 				</section>
 
 				<section>
-					<p>Auxílio na redução do tamanho dos métodos</p>
+					<h2>Auxílio na redução do tamanho dos métodos</h2>
 					<ul>
 						<li>Estipule um tamanho máximo(óbvio);</li>
 						<li>Quebre a responsabilidade</br>dos métodos em níveis;</li>
@@ -435,7 +438,7 @@ public class Animal{
 				</section>
 
 				<section>
-					<h3>Hierarquia(níveis) de métodos</h3>
+					<h2>Hierarquia(níveis) de métodos</h2>
 					<ul>
 						<li>Alto</li>
 							<ul>
@@ -467,7 +470,7 @@ public class Animal{
 
 
 				<section>
-					<p>Setas indicam a dependência dos métodos.</p>
+					<h3>Setas indicam a dependência dos métodos.</h3>
 					<img data-src="./img/niveis.jpg" alt="Circulos exemplificando diferença de níveis dos métodos"/>
 					<p>Quanto mais próximo do núcleo</br>menor o método.</p>
 				</section>
@@ -510,15 +513,8 @@ label.setText("Texto");
 					<img width="633" height="848" data-src="./img/responsabilidade2.png" alt="Exemplo de código com mais de uma responsabilidade"/>
 				</section>
 
-				<section>
-
-					<h2>Talk is cheap. Show me the code!</h2>
-					<p>Code time</p>
-				</section>
-
-
 				<section data-background="./img/notes.jpg">
-					<h3>Comentários, precisamos mesmo deles?</h3>
+					<h2>Comentários, precisamos mesmo deles?</h2>
 					<pre><code class="java" data-trim contenteditable>
 //When I wrote this, only God and I understood what I was doing
 //Now, God only knows
@@ -526,17 +522,17 @@ label.setText("Texto");
 				</section>
 
 				<section>
-					<h3>Regra básica dos comentários</h3>
+					<h2>Regra básica dos comentários</h2>
 					<p>Eles podem mentir, pois não compilam nem são executados...</p>
 				</section>
 				<section>
-					<p>Mais ou menos como isso aqui:</p>
+					<h2>Mais ou menos como isso aqui:</h2>
 					<img data-src="./img/comments.png" alt="Comentários mentem"/>
 				</section>
 
 				<section>
 					<p>Comentários não melhoram</p>
-					<h3>Código Ruim</h3>
+					<h2>Código Ruim</h2>
 					<p>Ao invés de sair inserindo comentários</br> pense se o código não precisa de uma refatoração.</p>
 				</section>
 
@@ -569,17 +565,17 @@ private Collection listaProdutos;
 				</section>
 
 				<section>
-					<p>Comentários óbvios</p>
+					<h2>Comentários óbvios</h2>
 					<img data-src="./img/comentarios_obvios.png" alt="Comentários óbvios que não ajudam em nada"/>
 				</section>
 
 				<section>
-					<p>Everywhere!</p>
+					<h2>Everywhere!</h2>
 					<img data-src="./img/comentarios_obvios2.png" alt="Comentários óbvios que não ajudam em nada"/>
 				</section>
 
 				<section>
-					<p>Journaling</p>
+					<h2>Journaling</h2>
 					<pre><code class="java" data-trim contenteditable>
 public double getTotalVenda(){
 // 06/06/1666 - batman - alterou o calculo mediante solicitação do Mário,
@@ -592,7 +588,7 @@ return totalVenda;
 				</section>
 
 				<section>
-					<p>Normalmente encontro resistência</p>
+					<p>Normalmente existem resistência</p>
 					<h2>Remoção do Journaling</h2>
 					<div class="fragment">
 						<img data-src="./img/versionning.png" alt="Imagem apresentando um histórico de commits em um repositório SVN"/>
@@ -630,7 +626,7 @@ return totalVenda;
 				</section>
 
 				<section>
-					<p>Em dúvida sobre se deve ou não deixar código comentado?</p>
+					<h2>Em dúvida se você deve ou não deixar código comentado?</h2>
 
 					<img data-src="./img/codigo_comentado_cabecalho.png" alt="Código minimizado com várias linhas"/>
 
@@ -665,7 +661,7 @@ if(getTextView().getText().toString().equalsIgnoreCase(ordemServicoComercial.get
 				</section>
 
 				<section>
-					<h3>Falando em formatação automática,</h3>
+					<h2>Falando em formatação automática</h2>
 					<p>Membros da mesma equipe devem utilizar</br> o mesmo estilo de workspace com a finalidade de:</p>
 					<ul>
 							<li>Evitar alterações desnecessárias;</li>
@@ -689,12 +685,12 @@ if(getTextView().getText().toString().equalsIgnoreCase(ordemServicoComercial.get
 				</section>
 
 				<section>
-					<h3>Quantas vezes você ja viu isso?</h3>
+					<h2>Quantas vezes você ja viu isso?</h2>
 					<img data-src="./img/exception.jpg" alt="Erro não tratado corretamente"/>
 				</section>
 
 				<section>
-					<h3>De a devida atenção as exceptions</h3>
+					<h2>De a devida atenção as exceptions</h2>
 					<p>Em geral só capture uma exceção quando for realizar alguma ação ou melhorar a mensagem.</p>
 					<p>Caso contrário passe para 'cima'.</p>
 				</section>
@@ -751,7 +747,7 @@ if(getTextView().getText().toString().equalsIgnoreCase(ordemServicoComercial.get
 				</section>
 
 				<section>
-					<h3>Tudo isso depende...</h3>
+					<h3>Tudo isso depende de:</h3>
 					<ul>
 						<li>Equipe comprometida com a qualidade;</li>
 						<li>Cooperação;</li>
@@ -815,6 +811,9 @@ if(getTextView().getText().toString().equalsIgnoreCase(ordemServicoComercial.get
 					<p>Espero ter contribuído!</p>
 					<p><a href="https://goo.gl/FuDsl3" target="blank">https://goo.gl/FuDsl3</a></p>
 					<img data-src="./img/qrcode.png" alt="QR Code com link apontando para a apresentaçao"/>
+				</section>
+
+				<section data-background="./img/csl.png">
 
 				</section>
 
@@ -822,7 +821,7 @@ if(getTextView().getText().toString().equalsIgnoreCase(ordemServicoComercial.get
 
 		</div>
 
-		<!-- <script>
+		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -831,7 +830,7 @@ if(getTextView().getText().toString().equalsIgnoreCase(ordemServicoComercial.get
 		  ga('create', 'UA-74713547-1', 'auto');
 		  ga('send', 'pageview');
 
-		</script> -->
+		</script>
 
 		<script src="../reveal/lib/js/head.min.js"></script>
 		<script src="../reveal/js/reveal.js"></script>
