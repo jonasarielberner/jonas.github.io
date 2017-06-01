@@ -16,7 +16,7 @@ Although sometimes you just can't avoid them and at the same time you need to te
 
 #### TL;DR
 
-If you, for whatever crazy reason, have an enum and inside you got an static method returning an instance of the enum, if try to mock that method inside a test then you will got strange errors when a switch(enumValue) is called, even if you are debbuging and see that the variable isn't null at all.
+**If you, for whatever crazy reason, have an enum and inside you got an static method returning an instance of the enum, if try to mock that method inside a test then you will got strange errors when a switch(enumValue) is called, even if you are debbuging and see that the variable isn't null at all.**
 
 ## switch statement throwing NullPointerException
 
@@ -55,6 +55,7 @@ public class AnimalLogger {
 
 ### Testing
 Now we want to test that thing, because this how it should be, right? So you write the test mocking the return of the static method with a test class as shown below.
+
 ```
 // prepare your tests to be able to mock an static
 @RunWith(PowerMockRunner.class)
