@@ -22,7 +22,7 @@ If you, for whatever crazy reason, have an enum and inside you got an static met
 
 For the sake of example imagine that you have an enum called Animal and it's values as described below and inside you have an static method returning a value of the enum.
 
-
+```
 public enum Animal{
     CAT,
     DOG;
@@ -31,9 +31,11 @@ public enum Animal{
         return DOG;
     }
 }
+```
 
 Now let's write a class that uses that static method for some crazy logic, that return a string based on the value returned by the static method.
 
+```
 public class AnimalLogger {
 
     public String log() {
@@ -49,10 +51,11 @@ public class AnimalLogger {
         }
     }
 }
+```
 
 ### Testing
 Now we want to test that thing, because this how it should be, right? So you write the test mocking the return of the static method with a test class as shown below.
-
+```
 // prepare your tests to be able to mock an static
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({Animal.class})
@@ -80,6 +83,8 @@ public class AnimalLoggerTest {
     }
 
 }
+```
+
 Everything is fine, and the test should pass, right?
 
 ### Not so fast!
